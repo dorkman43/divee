@@ -18,7 +18,7 @@ A little cat lives in your menu bar.
 ![Notarized](https://img.shields.io/badge/Apple-Notarized-2ea44f)
 ![Languages](https://img.shields.io/badge/Languages-English%20·%20한국어-555)
 
-[How to use](#-how-to-use) · [Features](#-features-in-detail) · [AI assistant](#-ai-assistant) · [Themes](#-themes) · [Shortcuts](#%EF%B8%8F-shortcuts) · [DevDive](#-devdive-integration-coming-soon) · [Install](#-install) · [Trust](#%EF%B8%8F-built-to-be-trusted)
+[Instant cards](#-instant-cards-102) · [How to use](#-how-to-use) · [Features](#-features-in-detail) · [AI assistant](#-ai-assistant) · [Themes](#-themes) · [Shortcuts](#%EF%B8%8F-shortcuts) · [DevDive](#-devdive-integration-coming-soon) · [Install](#-install) · [Trust](#%EF%B8%8F-built-to-be-trusted)
 
 <br>
 
@@ -41,6 +41,23 @@ A little cat lives in your menu bar.
 <div align="center">
 <img src="images/en/hero-fan.png" width="760" alt="Fan & Temp flyout — one slider per fan">
 </div>
+
+## ⚡ Instant cards (1.0.2)
+
+Type a line and it turns into a card **before you press Return** — computed on your Mac, no AI needed.
+
+| Type | Card |
+|---|---|
+| `3pm pst in ist`, `what time is it in tokyo` | Time zone conversion (shows next day) |
+| `split 2400 between 3`, `18% of 3450`, `72f to c` | Split · percent · unit conversion |
+| `days until christmas`, `100 days from now` | Dates and countdowns |
+| `weather tokyo` | Weather (with the Weather module on) |
+| `what's tomorrow`, `lunch with anna tomorrow` | View and add events — details open right inside the panel |
+| `buy milk, eggs and bread` | Checklist → Reminders |
+| `timer 25m` | Timer — time left in the menu bar; pause, extend and cancel in the panel |
+| `#ff6b35`, `tiffany blue` | Color (copy HEX · RGB · HSL) |
+| `what's slow`, `quit slack` | Apps using the most CPU · quit an app |
+| `brightness 50`, `fans max`, `keep awake 1h` | Control a feature directly (Return to apply) |
 
 ## 🛡️ Built to be trusted
 

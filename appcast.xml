@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Divee</title>
+        <item>
+            <title>1.0.1</title>
+            <pubDate>Sun, 27 Sep 2026 22:40:45 +0900</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[자동 업데이트 추가, 영어 번역 보완 / Added automatic updates, English translation fixes]]></description>
+            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.1/Divee-1.0.1.dmg" length="5622219" type="application/octet-stream" sparkle:edSignature="B2jvKm8wF9bA8OC6xiNmC36ojDFx/U+EjGRkl4WyW7Y+ZaFmmrnnDvSc02hN0FGLmaTBqdcGwGDZ0N/esHv0CQ=="/>
+        </item>
+    </channel>
+</rss>

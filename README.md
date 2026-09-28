@@ -18,7 +18,7 @@ A little cat lives in your menu bar.
 ![Notarized](https://img.shields.io/badge/Apple-Notarized-2ea44f)
 ![Languages](https://img.shields.io/badge/Languages-English%20·%20한국어-555)
 
-[Instant cards](#-instant-cards-102) · [How to use](#-how-to-use) · [Features](#-features-in-detail) · [AI assistant](#-ai-assistant) · [Themes](#-themes) · [Shortcuts](#%EF%B8%8F-shortcuts) · [DevDive](#-devdive-integration-coming-soon) · [Install](#-install) · [Trust](#%EF%B8%8F-built-to-be-trusted)
+[Instant cards](#-instant-cards) · [How to use](#-how-to-use) · [Features](#-features-in-detail) · [AI assistant](#-ai-assistant) · [Themes](#-themes) · [Shortcuts](#%EF%B8%8F-shortcuts) · [DevDive](#-devdive-integration-coming-soon) · [Install](#-install) · [Trust](#%EF%B8%8F-built-to-be-trusted)
 
 <br>
 
@@ -42,7 +42,7 @@ A little cat lives in your menu bar.
 <img src="images/en/hero-fan.png" width="760" alt="Fan & Temp flyout — one slider per fan">
 </div>
 
-## ⚡ Instant cards (1.0.2)
+## ⚡ Instant cards
 
 Type a line and it turns into a card **before you press Return** — computed on your Mac, no AI needed.
 
@@ -58,6 +58,11 @@ Type a line and it turns into a card **before you press Return** — computed on
 | `#ff6b35`, `tiffany blue` | Color (copy HEX · RGB · HSL) |
 | `what's slow`, `quit slack` | Apps using the most CPU · quit an app |
 | `brightness 50`, `fans max`, `keep awake 1h` | Control a feature directly (Return to apply) |
+| `claude usage`, `codex limit` | AI usage (Claude Code · Codex limits) |
+| `checklist` | Checklist — the input becomes "Add item", checked items get struck through |
+| `settings`, `bluetooth settings` | Open the matching System Settings pane |
+| `move this window left` | Arrange the window you were in when you pressed ⌥Space |
+| `theme nord`, `animations off` | Change Divee by typing (the cat confirms, with undo) |
 
 ## 🛡️ Built to be trusted
 

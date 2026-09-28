@@ -3,14 +3,14 @@
     <channel>
         <title>Divee</title>
         <item>
-            <title>1.0.3</title>
-            <pubDate>Mon, 28 Sep 2026 10:55:35 +0900</pubDate>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <title>1.0.4</title>
+            <pubDate>Mon, 28 Sep 2026 23:35:31 +0900</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[즉석 카드 오탐 수정 — '영화'·'화면'의 '화'를 화요일로 읽거나 '오늘 기분이 별로야' 같은 평범한 문장을 일정으로 잡던 문제 / Fixed instant cards turning ordinary sentences into events]]></description>
-            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.3/Divee-1.0.3.dmg" length="5969398" type="application/octet-stream" sparkle:edSignature="nP/TvFUkvZsY8TEEjFvJb27tr3+I0ufHe4cjw/MA5KGBH4Rth/7e5bGmpoUJKN6FF5wJs78a0kp+b5tCbsmDBQ=="/>
+            <description><![CDATA[빠른 버튼 줄·드래그 이동, 고양이가 결과를 알려 주고 되돌리기, 말로 Divee 설정 바꾸기, 체크리스트, 시스템 설정 바로 열기, 창 단위 대상, AI 사용량 카드, 한국 지명 날씨 / Quick buttons & drag, the cat reports results with undo, change Divee settings by typing, checklist, open System Settings panes, per-window target, AI usage card, better Korean place names for weather]]></description>
+            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.4/Divee-1.0.4.dmg" length="6240651" type="application/octet-stream" sparkle:edSignature="g7+K4AoUqY/baFx27c4jqmQ1L0/OnWZ+t0ZWOW20XR5a/J7BNqK466uLVQk2wPeLnmBGYkppKpStcuFfzV6bDg=="/>
         </item>
     </channel>
 </rss>

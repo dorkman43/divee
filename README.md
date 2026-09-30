@@ -8,7 +8,7 @@
 
 **All the little Mac settings, in one menu bar app — one ⌥Space away.**
 
-Fans & temperature, brightness, battery, sleep, window arranging, clipboard history and more, in one free menu bar utility.<br>
+Fans & temperature, brightness, battery, sleep, key remapping, clipboard history and more, in one free menu bar utility.<br>
 A little cat lives in your menu bar.
 
 [![Download](https://img.shields.io/badge/Download-Divee-3478F6?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/dorkman43/divee/releases/latest/download/Divee.dmg)
@@ -34,7 +34,7 @@ A little cat lives in your menu bar.
 
 - **One ⌥Space and you're there.** Hover a row under the input field or press → and it **slides out to the side**, just like a Windows right-click menu. Up to three levels deep.
 - **Fully keyboard-driven.** ↑↓ move · → open · ← back · Return run · ESC close. Sliders move with ←/→.
-- **Turn on only what you need.** Pick from 24 modules; modules you turn off don't run at all. Out of the box only System, Battery and Fan & Temp are on.
+- **Turn on only what you need.** Pick from 25 modules; modules you turn off don't run at all. Out of the box only System, Battery, Fan & Temp and Checklist are on.
 - **Lightweight.** About 0.6% CPU while the panel is closed and about 1% while it's open. Animations are native macOS ones, and you can turn them off in Settings.
 - **On your Mac by default.** The AI tries on-device models first. Anything that sends data out works only when you turn it on, and Settings shows exactly what's on.
 
@@ -61,15 +61,20 @@ Type a line and it turns into a card **before you press Return** — computed on
 | `claude usage`, `codex limit` | AI usage (Claude Code · Codex limits) |
 | `checklist` | Checklist — the input becomes "Add item", checked items get struck through |
 | `settings`, `bluetooth settings` | Open the matching System Settings pane |
-| `move this window left` | Arrange the window you were in when you pressed ⌥Space |
 | `theme nord`, `animations off` | Change Divee by typing (the cat confirms, with undo) |
+| `caps lock to esc`, `clear key remap` | Remap a key (Return to apply) |
+| `feedback …`, `bug …` | Send feedback — opens a pre-filled GitHub issue; nothing is sent until you submit it |
+
+**Said it as a sentence?** When no rule matches, a tiny on-device classifier (24 KB) picks the card you most likely meant — `make the screen dimmer`, `switch to night mode`, `mute my microphone`. Those cards are marked **✦ On-device**, and if it isn't sure, no card appears.
 
 ## 🛡️ Built to be trusted
 
 | | |
 |---|---|
 | **Notarized by Apple** | Signed with a Developer ID and notarized, so it opens without warnings. |
-| **Privileged helper** | Installed with your admin password **only the first time** you use fan control or Clamshell. It does exactly three things: set a fan speed / return it to automatic, toggle `pmset disablesleep`, and uninstall itself. Only the signed Divee app can talk to it, and if Divee stops responding it **returns the fans to automatic within 30 seconds.** |
+| **Background helper** | Needed only for fan control and Clamshell. It's registered through macOS's own background items, and you approve it **once** in System Settings › General › Login Items. It does exactly three things: set a fan speed / return it to automatic, toggle `pmset disablesleep`, and uninstall itself. Divee and the helper each check the other's code signature, and if Divee stops responding the helper **returns the fans to automatic within 30 seconds.** |
+| **Risky actions ask first** | When the AI wants to do something that can't easily be undone — open a file, run a Shortcut, click something on screen, eject disks and the like — the cat shows what it's about to do and waits: **↩ to run, ESC to cancel.** |
+| **Signed updates** | Every update and the update feed itself are signed (EdDSA). Divee tells you a new version is out, and nothing installs until you say so. |
 | **What it doesn't collect** | No analytics, telemetry or ad tracking. Keystrokes are never recorded; the screen and camera are looked at once, only when you ask, and never saved. |
 | **What leaves your Mac** | Only for features you turn on, only to the listed destinations — see the [Privacy](#-privacy) table. |
 | **Clean removal** | Settings › Fan & Temp › **Remove Helper** restores your fan and sleep settings and deletes the helper. Then move the app to the Trash — that's it. |
@@ -82,7 +87,7 @@ Type a line and it turns into a card **before you press Return** — computed on
 |---|---|
 | **⌥Space** | Open / close the Divee panel |
 | **Click** the menu bar cat | Opens the same panel |
-| **Right-click** the menu bar cat | Settings… · Pin floating panel · Check for Updates… · Quit Divee |
+| **Right-click** the menu bar cat | Settings… · Pin floating panel · Send Feedback… · Check for Updates… · Quit Divee |
 
 ### The home list
 
@@ -136,7 +141,7 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 - **Panel:** CPU and GPU temperatures and a slider per fan ("Fan 1" inside the bar, RPM on the right). Drag and release to put that fan in manual mode. Choose Auto · Max · Temperature curve under **Fan Speed ›**.
 - **Settings:** temperature in the menu bar, warning temperature and alerts, refresh interval, min/max temperatures for the curve, install/remove the helper.
 - **Ask the AI:** "How are my fans?", "Max the fans", "Put the fans back on auto", "Turn on the temperature curve"
-- Reading temperatures and RPM needs no permission. **Changing fan speed** installs the helper once with your admin password.
+- Reading temperatures and RPM needs no permission. **Changing fan speed** needs the background helper — approve it once in System Settings › General › Login Items.
 </details>
 
 <details>
@@ -148,6 +153,15 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 - **Brightness keys for external displays:** the keyboard brightness keys (F1/F2) adjust external displays too. Requires Accessibility.
 - **Settings:** auto-select the display you clicked, brightness-key control.
 - **Ask the AI:** "Set brightness to 50", "What's the brightness now?"
+</details>
+
+<details>
+<summary><b>Key Remap</b> — turn one key into another (Caps Lock → Esc and more)</summary>
+
+- **Presets:** Caps Lock → Esc · Caps Lock → ⌃ Control · Right ⌘ → Caps Lock · Left ⌥ ↔ ⌘ (Windows keyboards), or pick any two keys yourself.
+- **Import from Karabiner:** reads the simple key swaps (simple modifications) from `~/.config/karabiner/karabiner.json`. Complex rules are skipped and counted, and the file is never changed.
+- **Type it:** `caps lock to esc`, `clear key remap`
+- Uses macOS's built-in `hidutil` and re-applies after launch, wake and when a keyboard is connected. Turning the module off (or right-click › **Clear all key remaps**) removes every mapping. Swaps that would lock you out — no Return, no Esc, no ⌘/⌃ — are refused. Keystrokes are never watched or recorded, and no permission is needed.
 </details>
 
 <details>
@@ -168,7 +182,7 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 - **Panel:** ✓ Keep Awake, ✓ Clamshell (stays on with the lid closed), **Duration ›** indefinitely · 30 min · 1 · 2 · 4 hours.
 - **Settings:** custom duration, "keep the display on too".
 - **Ask the AI:** "Keep my Mac awake for 30 minutes", "Don't sleep when I close the lid"
-- Clamshell needs your admin password once, and shows a heat warning when turned on.
+- Clamshell uses the same background helper (approve it once in Login Items), and shows a heat warning when turned on.
 </details>
 
 <details>
@@ -219,15 +233,21 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 <details>
 <summary><b>Special Characters</b> — frequently used symbols, one click away</summary>
 
-- Click a symbol to copy it. Edit the list freely in Settings.
+- Click a symbol to copy it. Includes the Mac key symbols **⌘ ⌥ ⌃ ⇧ ⇪ ⇥ ⏎ ⌫ ⌦ ⎋ ⏏** — plain Unicode, so they paste into messages and docs on other systems too.
+- Edit the list freely in Settings (**Restore Defaults** brings back the full list).
 </details>
 
 <details>
-<summary><b>Window Arrange</b> — gather and tile windows</summary>
+<summary><b>Checklist</b> — one simple to-do list in the panel <i>(on by default)</i></summary>
 
-- **Window groups:** group apps you use together (e.g. Dev = Code · Xcode · Terminal) and bring all their windows to the current desktop with one command.
-- **Ask the AI:** "Gather my dev windows", "Split left and right", "Keep only this window", "Show all hidden apps"
-- Requires Accessibility.
+- Type `checklist` and the input becomes "Add item"; click to check, and checked items get struck through. **Clear completed** or **Empty** the list when you're done.
+- Saved only on this Mac — no sync.
+</details>
+
+<details>
+<summary><b>Window Arrange</b> — gather and tile windows <i>(coming soon)</i></summary>
+
+- Paused while we rework it — it can't be turned on for now. If you had it on, it comes back as it was once it returns.
 </details>
 
 <details>
@@ -351,7 +371,7 @@ Change any shortcut in Settings › Shortcuts.
 - **Features:** modules grouped into System · Tools · AI & agents · Experimental. You can open a module's settings even before turning it on.
 - **General:** AI backend, voice input, **Show in menu bar** (up to 2 modules, so the notch doesn't hide them), **Animations**, Theme.
 - **Permissions:** see at a glance what's allowed and jump straight to granting it.
-- **About:** what currently sends data out, **export/import settings** (a single JSON file), automatic update checks, replay the welcome guide.
+- **About:** what currently sends data out, **export/import settings** (a single JSON file), update checks, **Send feedback…**, replay the welcome guide.
 
 ## 📦 Install
 
@@ -361,7 +381,9 @@ Change any shortcut in Settings › Shortcuts.
 
 It's notarized by Apple, so it opens without the "unidentified developer" warning.
 
-**Updates:** from 1.0.1 on, Divee tells you when a new version is out and installs it for you (checks once a day; turn it off in Settings › About). If you're on 1.0.0, download the new version from the link above just this once.
+**Updates:** Divee checks once a day (turn it off in Settings › About). When a new version is out, a small dot appears on the menu bar cat and the cat tells you — nothing installs until you click **Install**. If you're on 1.0.0, download the new version from the link above just this once.
+
+**Upgrading to 1.0.5 with fan control or Clamshell?** The helper now uses macOS's background items. Open Settings › Fan & Temp, click **Move helper to the new method**, then turn Divee on in System Settings › General › Login Items.
 
 **Requires:** macOS 14 Sonoma or later on an Apple Silicon Mac (M1 or later)
 
@@ -371,7 +393,7 @@ Divee asks only for what the features you turn on need, and says why.
 
 | Permission | Used by |
 |---|---|
-| Accessibility | Window Arrange, switching Spaces, brightness keys for external displays, clicking on-screen text |
+| Accessibility | Switching Spaces, brightness keys for external displays, clicking on-screen text |
 | Screen Recording | Read screen, Hinge Fold |
 | Calendars · Reminders | Checking and adding events |
 | Microphone · Speech Recognition | Voice input (only while held) |
@@ -379,7 +401,7 @@ Divee asks only for what the features you turn on need, and says why.
 | Input Monitoring | Motion & Knock, Level (experimental) |
 | Camera | Camera View (experimental) |
 | Notifications | Battery and fan alerts, Hooks |
-| Admin password (once) | Installing the helper for fan control and Clamshell |
+| Login Items approval (once) | The background helper for fan control and Clamshell |
 
 ### Uninstall
 
@@ -396,13 +418,14 @@ Divee works **on your Mac only** by default. Data leaves your Mac only when you 
 | AI Usage | Your usage lookup (Codex) | OpenAI servers |
 | A remote AI backend you chose | Your sentence | The server you chose |
 | Update check (once a day, can be off) | App version (request header) | GitHub |
+| Send feedback (only when you submit) | What you wrote + Divee version, macOS version, chip | A GitHub issue, in your browser |
 | DevDive (coming soon, only when on) | Generation requests (prompts, text) | DevDive servers |
 
 Read screen and the camera look at a single frame and never save it. Accelerometer readings are discarded right after use, and keystrokes are never collected.
 
 ## 💬 Feedback
 
-Bug reports and suggestions are welcome in [Issues](https://github.com/dorkman43/divee/issues).
+Bug reports and suggestions are welcome. Right-click the menu bar cat › **Send Feedback…**, or type `feedback …` in the ⌥Space panel — it opens a pre-filled [GitHub issue](https://github.com/dorkman43/divee/issues) with your Divee and macOS versions and chip type (nothing else), and you submit it yourself.
 
 <div align="center">
 <sub>© 2026 dorkman43 · Divee is free to use.</sub>

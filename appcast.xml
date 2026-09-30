@@ -1,16 +1,20 @@
-<?xml version="1.0" standalone="yes"?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
+IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
+--><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Divee</title>
         <item>
-            <title>1.0.4</title>
-            <pubDate>Mon, 28 Sep 2026 23:35:31 +0900</pubDate>
-            <sparkle:version>5</sparkle:version>
-            <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+            <title>1.0.5</title>
+            <pubDate>Thu, 01 Oct 2026 01:25:25 +0900</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[빠른 버튼 줄·드래그 이동, 고양이가 결과를 알려 주고 되돌리기, 말로 Divee 설정 바꾸기, 체크리스트, 시스템 설정 바로 열기, 창 단위 대상, AI 사용량 카드, 한국 지명 날씨 / Quick buttons & drag, the cat reports results with undo, change Divee settings by typing, checklist, open System Settings panes, per-window target, AI usage card, better Korean place names for weather]]></description>
-            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.4/Divee-1.0.4.dmg" length="6240651" type="application/octet-stream" sparkle:edSignature="g7+K4AoUqY/baFx27c4jqmQ1L0/OnWZ+t0ZWOW20XR5a/J7BNqK466uLVQk2wPeLnmBGYkppKpStcuFfzV6bDg=="/>
+            <description><![CDATA[키보드 키 바꾸기(Caps Lock→Esc 등, Karabiner 설정 가져오기), 피드백 보내기, 새 버전을 확인받아 설치, 문장으로 물어도 알아듣는 온디바이스 분류, 특수문자에 Mac 키 기호(⌘ ⌥ ⌃), 패널 윗변 고정, 보안 강화(AI 위험 작업은 확인 후 실행, 팬 도우미 새 방식 — 팬 설정에서 '옮기기' 후 로그인 항목에서 승인), 창 정리는 잠시 준비 중 / Keyboard remapping (Caps Lock→Esc, import Karabiner simple mods), send feedback, confirm-before-install updates, on-device intent classifier for sentence input, Mac key symbols (⌘ ⌥ ⌃), panel top edge stays fixed, security hardening (risky AI actions need confirmation, new fan helper — press Move in Fan settings, then approve in Login Items), window arrange paused]]></description>
+            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.5/Divee-1.0.5.dmg" length="6482450" type="application/octet-stream" sparkle:edSignature="4JJqLVqcBul8M5QAPJUGJF5eONqun3LLJOhPMrTyfiIAy4OyJkPZUMJIC+T/TQCZPQWfS02kyNNe5lSxTf1bCg=="></enclosure>
         </item>
     </channel>
-</rss>
+</rss><!-- sparkle-signatures:
+edSignature: GqFPMIlmrhx+RVwpZgDXbrl2YQ0h9v3FNp2wvBUqQvpr4z8qLdkod4mhN/eEAggdbKi0T5OSRJrrCFK0r/ztCQ==
+length: 1981
+-->

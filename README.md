@@ -63,6 +63,7 @@ Type a line and it turns into a card **before you press Return** — computed on
 | `settings`, `bluetooth settings` | Open the matching System Settings pane |
 | `theme nord`, `animations off` | Change Divee by typing (the cat confirms, with undo) |
 | `caps lock to esc`, `clear key remap` | Remap a key (Return to apply) |
+| `find folders named report`, `pdfs I downloaded last week` | Find files by kind · name · place · date — shows how it understood you |
 | `feedback …`, `bug …` | Send feedback — opens a pre-filled GitHub issue; nothing is sent until you submit it |
 
 **Said it as a sentence?** When no rule matches, a tiny on-device classifier (24 KB) picks the card you most likely meant — `make the screen dimmer`, `switch to night mode`, `mute my microphone`. Those cards are marked **✦ On-device**, and if it isn't sure, no card appears.
@@ -72,7 +73,7 @@ Type a line and it turns into a card **before you press Return** — computed on
 | | |
 |---|---|
 | **Notarized by Apple** | Signed with a Developer ID and notarized, so it opens without warnings. |
-| **Background helper** | Needed only for fan control and Clamshell. It's registered through macOS's own background items, and you approve it **once** in System Settings › General › Login Items. It does exactly three things: set a fan speed / return it to automatic, toggle `pmset disablesleep`, and uninstall itself. Divee and the helper each check the other's code signature, and if Divee stops responding the helper **returns the fans to automatic within 30 seconds.** |
+| **Background helper** | Needed only for fan control and Clamshell. It's registered through macOS's own background items, and you approve it **once** in System Settings › General › Login Items. It does exactly three things: set a fan speed / return it to automatic, toggle `pmset disablesleep`, and uninstall itself. Divee and the helper each check the other's code signature, and if Divee stops responding the helper **returns the fans to automatic and turns Clamshell off within 30 seconds.** When Divee updates, the helper updates itself — no new approval. |
 | **Risky actions ask first** | When the AI wants to do something that can't easily be undone — open a file, run a Shortcut, click something on screen, eject disks and the like — the cat shows what it's about to do and waits: **↩ to run, ESC to cancel.** |
 | **Signed updates** | Every update and the update feed itself are signed (EdDSA). Divee tells you a new version is out, and nothing installs until you say so. |
 | **What it doesn't collect** | No analytics, telemetry or ad tracking. Keystrokes are never recorded; the screen and camera are looked at once, only when you ask, and never saved. |
@@ -123,7 +124,7 @@ Start typing and the list turns into search results.
 |---|---|
 | Features | Modules you've turned on and their commands (e.g. "max fans", "brightness up") |
 | AI | Ask the AI your sentence as-is |
-| Apps · Files | Apps and files found with Spotlight |
+| Apps · Files | Apps and files found with Spotlight. Sentences work too: `find folders named report`, `screenshots on my desktop from today`, `pdfs I downloaded last week` |
 | Notes | Notes found in Apple Notes |
 | Dictionary | Definitions from the macOS dictionary |
 | Math | The result of an expression like `12*34` (Return copies it) |
@@ -182,7 +183,7 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 - **Panel:** ✓ Keep Awake, ✓ Clamshell (stays on with the lid closed), **Duration ›** indefinitely · 30 min · 1 · 2 · 4 hours.
 - **Settings:** custom duration, "keep the display on too".
 - **Ask the AI:** "Keep my Mac awake for 30 minutes", "Don't sleep when I close the lid"
-- Clamshell uses the same background helper (approve it once in Login Items), and shows a heat warning when turned on.
+- Clamshell uses the same background helper (approve it once in Login Items), shows a heat warning when turned on, and turns itself off when Divee quits or stops responding.
 </details>
 
 <details>
@@ -317,7 +318,7 @@ Write what you want done in plain language and the AI runs the matching features
 | **Local-first** (default) | Your Mac | Apple on-device → Ollama; hands off to your chosen server only when needed or when you say "use the cloud". Handed-off answers are marked ☁︎ |
 | Apple on-device | Your Mac | Apple Intelligence model. macOS 26 or later |
 | Ollama | Your Mac | Ollama models running locally |
-| OpenAI-compatible server | The server you choose | OpenAI · OpenRouter · Groq · LM Studio and more. API key stored in the Keychain |
+| OpenAI-compatible server | The server you choose | OpenAI · OpenRouter · Groq · LM Studio and more. Remote servers need https (http only for servers on this Mac). API key stored in the Keychain, separately per server address |
 
 - **Voice input:** hold ⌃⌥Space and speak; your words go into the input field. Recognition happens on your Mac.
 - **Recent Answers:** requests keep running even after you close the panel, and results stay in "Recent Answers".
@@ -383,7 +384,7 @@ It's notarized by Apple, so it opens without the "unidentified developer" warnin
 
 **Updates:** Divee checks once a day (turn it off in Settings › About). When a new version is out, a small dot appears on the menu bar cat and the cat tells you — nothing installs until you click **Install**. If you're on 1.0.0, download the new version from the link above just this once.
 
-**Upgrading to 1.0.5 with fan control or Clamshell?** The helper now uses macOS's background items. Open Settings › Fan & Temp, click **Move helper to the new method**, then turn Divee on in System Settings › General › Login Items.
+**Used fan control or Clamshell before 1.0.5?** The helper now uses macOS's background items. Open Settings › Fan & Temp, click **Move helper to the new method**, then turn Divee on in System Settings › General › Login Items. From 1.0.6 on, the helper updates itself along with Divee.
 
 **Requires:** macOS 14 Sonoma or later on an Apple Silicon Mac (M1 or later)
 

@@ -4,17 +4,17 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Divee</title>
         <item>
-            <title>1.0.5</title>
-            <pubDate>Thu, 01 Oct 2026 01:25:25 +0900</pubDate>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+            <title>1.0.6</title>
+            <pubDate>Thu, 01 Oct 2026 21:13:35 +0900</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[키보드 키 바꾸기(Caps Lock→Esc 등, Karabiner 설정 가져오기), 피드백 보내기, 새 버전을 확인받아 설치, 문장으로 물어도 알아듣는 온디바이스 분류, 특수문자에 Mac 키 기호(⌘ ⌥ ⌃), 패널 윗변 고정, 보안 강화(AI 위험 작업은 확인 후 실행, 팬 도우미 새 방식 — 팬 설정에서 '옮기기' 후 로그인 항목에서 승인), 창 정리는 잠시 준비 중 / Keyboard remapping (Caps Lock→Esc, import Karabiner simple mods), send feedback, confirm-before-install updates, on-device intent classifier for sentence input, Mac key symbols (⌘ ⌥ ⌃), panel top edge stays fixed, security hardening (risky AI actions need confirmation, new fan helper — press Move in Fan settings, then approve in Login Items), window arrange paused]]></description>
-            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.5/Divee-1.0.5.dmg" length="6482450" type="application/octet-stream" sparkle:edSignature="4JJqLVqcBul8M5QAPJUGJF5eONqun3LLJOhPMrTyfiIAy4OyJkPZUMJIC+T/TQCZPQWfS02kyNNe5lSxTf1bCg=="></enclosure>
+            <description><![CDATA[자연어 파일 검색(‘폴더 중에서 이름 보고서인 거 찾아줘’, ‘지난주 받은 pdf’ — 엔터 전에 결과와 해석 요약), 닫힘 모드는 Divee 가 꺼지거나 멈추면 자동 해제, 팬 도우미가 업데이트 때 자동으로 새 버전으로 교체, 보안 강화(클립보드 기록에서 비밀번호 관리자 항목 제외, 설정 가져오기 확인·실행형 훅은 꺼진 채, 밖에서 바뀐 훅은 실행 안 함, AI 서버는 https 필수·키는 주소별 저장, 답변 링크는 http/https 만·실제 주소 표시, 설정 내보내기에서 대화 기록 기본 제외) / Natural-language file search (‘folders named report’, ‘pdfs from last week’ — results and how it was understood, before you press Return), Clamshell turns off automatically if Divee quits or stops responding, the fan helper updates itself, security hardening (password-manager items are kept out of clipboard history, settings import asks first and imports command hooks turned off, hooks changed outside Divee don't run, AI servers need https and keys are stored per address, answer links open only http/https and show the real host, chat history left out of settings export by default)]]></description>
+            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.6/Divee-1.0.6.dmg" length="6604833" type="application/octet-stream" sparkle:edSignature="IXztt9AfS8072MvfVB1oCfW4bClLlQJi2jTg0ilFMCxUcgQ9uVNpFFb3FPa2PN38iNbbOmgvHkYT5mFiJBuvCA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: GqFPMIlmrhx+RVwpZgDXbrl2YQ0h9v3FNp2wvBUqQvpr4z8qLdkod4mhN/eEAggdbKi0T5OSRJrrCFK0r/ztCQ==
-length: 1981
+edSignature: 8lsHYJLGJizB6GnDShGc6TXYe1I5uRp8zOir5eUZdD1pPvXkyQdk7eHPcs5T4OLiYOWQjPyYyGxgj8find7ACw==
+length: 2390
 -->

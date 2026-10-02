@@ -62,8 +62,8 @@ Type a line and it turns into a card **before you press Return** — computed on
 | `checklist` | Checklist — the input becomes "Add item", checked items get struck through |
 | `settings`, `bluetooth settings` | Open the matching System Settings pane |
 | `theme nord`, `animations off` | Change Divee by typing (the cat confirms, with undo) |
-| `caps lock to esc`, `clear key remap` | Remap a key (Return to apply) |
-| `find folders named report`, `pdfs I downloaded last week` | Find files by kind · name · place · date — shows how it understood you |
+| `right command korean`, `caps tap esc hold control`, `caps lock to esc` | Key remap cards and simple remaps (Return to apply, with undo) |
+| `find folders named report`, `folders created between sep 1 and sep 15` | Find files by kind · name · place · date range — shows how it understood you |
 | `feedback …`, `bug …` | Send feedback — opens a pre-filled GitHub issue; nothing is sent until you submit it |
 
 **Said it as a sentence?** When no rule matches, a tiny on-device classifier (24 KB) picks the card you most likely meant — `make the screen dimmer`, `switch to night mode`, `mute my microphone`. Those cards are marked **✦ On-device**, and if it isn't sure, no card appears.
@@ -74,6 +74,7 @@ Type a line and it turns into a card **before you press Return** — computed on
 |---|---|
 | **Notarized by Apple** | Signed with a Developer ID and notarized, so it opens without warnings. |
 | **Background helper** | Needed only for fan control and Clamshell. It's registered through macOS's own background items, and you approve it **once** in System Settings › General › Login Items. It does exactly three things: set a fan speed / return it to automatic, toggle `pmset disablesleep`, and uninstall itself. Divee and the helper each check the other's code signature, and if Divee stops responding the helper **returns the fans to automatic and turns Clamshell off within 30 seconds.** When Divee updates, the helper updates itself — no new approval. |
+| **Key rules stay local** | Keyboard rules run in a separate, sandboxed process that can't reach the network. It tells Divee only what to do ("switch input"), never which keys you pressed. |
 | **Risky actions ask first** | When the AI wants to do something that can't easily be undone — open a file, run a Shortcut, click something on screen, eject disks and the like — the cat shows what it's about to do and waits: **↩ to run, ESC to cancel.** |
 | **Signed updates** | Every update and the update feed itself are signed (EdDSA). Divee tells you a new version is out, and nothing installs until you say so. |
 | **What it doesn't collect** | No analytics, telemetry or ad tracking. Keystrokes are never recorded; the screen and camera are looked at once, only when you ask, and never saved. |
@@ -124,7 +125,7 @@ Start typing and the list turns into search results.
 |---|---|
 | Features | Modules you've turned on and their commands (e.g. "max fans", "brightness up") |
 | AI | Ask the AI your sentence as-is |
-| Apps · Files | Apps and files found with Spotlight. Sentences work too: `find folders named report`, `screenshots on my desktop from today`, `pdfs I downloaded last week` |
+| Apps · Files | Apps and files found with Spotlight. Sentences work too: `find folders named report`, `screenshots on my desktop from today`, `pdfs from august`, `folders created between sep 1 and sep 15` — cache and build folders are left out |
 | Notes | Notes found in Apple Notes |
 | Dictionary | Definitions from the macOS dictionary |
 | Math | The result of an expression like `12*34` (Return copies it) |
@@ -157,12 +158,19 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 </details>
 
 <details>
-<summary><b>Key Remap</b> — turn one key into another (Caps Lock → Esc and more)</summary>
+<summary><b>Key Remap</b> — Karabiner-style key rules, made simple</summary>
 
-- **Presets:** Caps Lock → Esc · Caps Lock → ⌃ Control · Right ⌘ → Caps Lock · Left ⌥ ↔ ⌘ (Windows keyboards), or pick any two keys yourself.
-- **Import from Karabiner:** reads the simple key swaps (simple modifications) from `~/.config/karabiner/karabiner.json`. Complex rules are skipped and counted, and the file is never changed.
-- **Type it:** `caps lock to esc`, `clear key remap`
-- Uses macOS's built-in `hidutil` and re-applies after launch, wake and when a keyboard is connected. Turning the module off (or right-click › **Clear all key remaps**) removes every mapping. Swaps that would lock you out — no Return, no Esc, no ⌘/⌃ — are refused. Keystrokes are never watched or recorded, and no permission is needed.
+- **"What do you want to do" cards** (Settings › Key Remap) — turn one on and it works right away:
+  - **Korean/English switch key, no delay** — tap Right ⌘ (or Caps Lock, Right ⌥, or a Korean keyboard's 한/영 key) to switch instantly. The first letter you type right after isn't dropped. Works with or without the system "previous input source" shortcut, and with Gureum.
+  - **Caps Lock: tap = Esc, hold = Control** (or tap to switch Korean/English)
+  - **Hyper key** — hold Caps Lock or Right ⌥ for ⌃⌥⇧⌘
+  - **Windows keyboard** — swap ⌥ and ⌘ only on the external keyboards you pick
+  - **` instead of ₩** while typing Korean
+  - Per-app rules, a tap/hold threshold (default 300 ms) and a "Try it now" box
+- **Type it:** `right command korean`, `caps tap esc hold control`, `caps lock hyper` — with undo.
+- **Import from Karabiner:** simple modifications come in as-is; complex rules that match a card are shown for you to confirm. Shell commands and app launches are never imported, and the file is never changed.
+- **Advanced:** remap any single key to another (Caps Lock → Esc, Left ⌥ ↔ ⌘, …) with macOS's built-in `hidutil`.
+- **Safe by design:** keys are handled in a separate sandboxed process with no network access. Hold both ⇧ for 2 seconds to turn every rule off. If Divee quits or stops, the keyboard goes back to normal (within 30 seconds with the background helper installed). Rules pause in password fields. Cards need Accessibility — the same permission as the brightness keys; simple remaps need none.
 </details>
 
 <details>
@@ -394,7 +402,7 @@ Divee asks only for what the features you turn on need, and says why.
 
 | Permission | Used by |
 |---|---|
-| Accessibility | Switching Spaces, brightness keys for external displays, clicking on-screen text |
+| Accessibility | Key remap cards, switching Spaces, brightness keys for external displays, clicking on-screen text |
 | Screen Recording | Read screen, Hinge Fold |
 | Calendars · Reminders | Checking and adding events |
 | Microphone · Speech Recognition | Voice input (only while held) |

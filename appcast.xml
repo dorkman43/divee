@@ -4,17 +4,17 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Divee</title>
         <item>
-            <title>1.0.6</title>
-            <pubDate>Thu, 01 Oct 2026 21:13:35 +0900</pubDate>
-            <sparkle:version>7</sparkle:version>
-            <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
+            <title>1.0.7</title>
+            <pubDate>Fri, 02 Oct 2026 11:06:48 +0900</pubDate>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>1.0.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[자연어 파일 검색(‘폴더 중에서 이름 보고서인 거 찾아줘’, ‘지난주 받은 pdf’ — 엔터 전에 결과와 해석 요약), 닫힘 모드는 Divee 가 꺼지거나 멈추면 자동 해제, 팬 도우미가 업데이트 때 자동으로 새 버전으로 교체, 보안 강화(클립보드 기록에서 비밀번호 관리자 항목 제외, 설정 가져오기 확인·실행형 훅은 꺼진 채, 밖에서 바뀐 훅은 실행 안 함, AI 서버는 https 필수·키는 주소별 저장, 답변 링크는 http/https 만·실제 주소 표시, 설정 내보내기에서 대화 기록 기본 제외) / Natural-language file search (‘folders named report’, ‘pdfs from last week’ — results and how it was understood, before you press Return), Clamshell turns off automatically if Divee quits or stops responding, the fan helper updates itself, security hardening (password-manager items are kept out of clipboard history, settings import asks first and imports command hooks turned off, hooks changed outside Divee don't run, AI servers need https and keys are stored per address, answer links open only http/https and show the real host, chat history left out of settings export by default)]]></description>
-            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.6/Divee-1.0.6.dmg" length="6604833" type="application/octet-stream" sparkle:edSignature="IXztt9AfS8072MvfVB1oCfW4bClLlQJi2jTg0ilFMCxUcgQ9uVNpFFb3FPa2PN38iNbbOmgvHkYT5mFiJBuvCA=="></enclosure>
+            <description><![CDATA[키보드 키 바꾸기 2단계 — '하고 싶은 일' 카드로 쉽게: 한/영 전환 키(오른쪽 ⌘ 짧게, 지연·첫 글자 씹힘 없이), Caps Lock 짧게=Esc·길게=Control, Hyper 키, 윈도 키보드(외장만 ⌥↔⌘), ₩ 대신 `, 앱별 규칙, Karabiner 설정 가져오기, 패널에서 말로 켜기. 키 처리는 네트워크가 막힌 별도 프로세스에서만, Divee 가 멈추면 자동으로 원래대로. 파일 검색 날짜 범위(‘9월 1일부터 15일까지 만든 폴더’, ‘8월에 받은 pdf’)와 결과 정리, 1.0.6 의 ‘8월’을 이름으로 오해하던 문제 수정 / Keyboard remap stage 2 — simple cards: a Korean/English switch key (tap Right ⌘, no delay, no dropped first letter), Caps Lock tap = Esc / hold = Control, a Hyper key, Windows keyboards (swap ⌥/⌘ on external ones only), ` instead of ₩, per-app rules, Karabiner import, turn them on by typing. Keys are handled only in a separate process with no network access, and everything reverts if Divee stops. File search date ranges (‘folders created between sep 1 and sep 15’, ‘pdfs from august’) with cleaner results, and a fix for 1.0.6 reading ‘August’ as a file name]]></description>
+            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.7/Divee-1.0.7.dmg" length="7013242" type="application/octet-stream" sparkle:edSignature="W4J1/NPMhCBdsvm+VsJ6Ayqa0yPqZ1FLgSmYT8Aigg520Y+wJ1ZV+PHfKq1POXFHtB5SOgogLVH7p/Mup+jRBA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 8lsHYJLGJizB6GnDShGc6TXYe1I5uRp8zOir5eUZdD1pPvXkyQdk7eHPcs5T4OLiYOWQjPyYyGxgj8find7ACw==
-length: 2390
+edSignature: PNyAlp0mPjFaxAVvO/RDlPv8ckftjOsoNW2dDvQEtGMo7LsWj/PfkTCwZn40T+Uzdi5iXtcmZ8nOasRPHVaXAA==
+length: 2375
 -->

@@ -19,7 +19,7 @@ A little mascot lives in your menu bar — Divee by default, or the cat if you p
 ![Notarized](https://img.shields.io/badge/Apple-Notarized-2ea44f)
 ![Languages](https://img.shields.io/badge/Languages-English%20·%20한국어-555)
 
-[AI built in](#-ai-built-in) · [Instant cards](#-instant-cards) · [How to use](#-how-to-use) · [Features](#-features-in-detail) · [AI assistant](#-ai-assistant) · [Themes](#-themes) · [Shortcuts](#%EF%B8%8F-shortcuts) · [DevDive](#-devdive-integration-coming-soon) · [Install](#-install) · [Trust](#%EF%B8%8F-built-to-be-trusted)
+[AI built in](#-ai-built-in) · [Instant cards](#-instant-cards) · [How to use](#-how-to-use) · [Features](#-features-in-detail) · [AI assistant](#-ai-assistant) · [Themes](#-themes) · [Shortcuts](#%EF%B8%8F-shortcuts) · [devdive](#-devdive) · [Install](#-install) · [Trust](#%EF%B8%8F-built-to-be-trusted) · [Roadmap](#%EF%B8%8F-roadmap)
 
 <br>
 
@@ -380,7 +380,7 @@ Appear when you turn on **Show experimental features** in Settings › Features.
 - **Camera View:** takes one webcam look only when the AI asks, analyzes it on your Mac and never saves it.
 </details>
 
-> **Coming soon** — sillog upload and the [DevDive integration](#-devdive-integration-coming-soon) aren't available yet.
+> **Coming soon** — sillog upload and the [devdive integration](#-devdive) aren't available yet.
 
 ### Plugins
 
@@ -416,22 +416,22 @@ Write what you want done in plain language and the AI runs the matching features
 - **Voice input:** hold ⌃⌥Space and speak; your words go into the input field. Recognition happens on your Mac.
 - **Recent Answers:** requests keep running even after you close the panel, and results stay in "Recent Answers".
 
-## 🔗 DevDive integration (coming soon)
+## 🔗 devdive
 
 <table><tr><td>
 
-**[DevDive](https://devdive.ai)** is *the AI partner that transforms how you work* — a workspace that brings AI tools for images, video and speech together with AI workflows you can share with your teammates to cut down on repetitive work.
+**[devdive](https://devdive.ai)** is *the AI partner that transforms how you work* — a workspace that brings AI tools for images, video and speech together with AI workflows you can share with your teammates to cut down on repetitive work. It's made by the same team as Divee.
 
 </td></tr></table>
 
-Divee will connect to DevDive. Once connected, right from the ⌥Space panel:
+**In Divee (coming soon)** — connects through the devdive plugin. Turn it on and, right from the ⌥Space panel:
 
 - **"Draw a cat"** — generate images
-- **"Turn this scene into a video"** — generate video
+- **"Make a video of the ocean"** — generate video
 - **"Read this sentence aloud"** — generate speech
-- **"How many DevDive credits do I have left?"** — check credits, and open your workspace in one step
+- **"How many devdive credits do I have left?"** — check credits
 
-You connect with an API key issued in your DevDive workspace, stored only in your Mac's Keychain. Nothing is sent to DevDive until you turn it on.
+Your devdive API key is stored only in your Mac's Keychain, and a confirmation card appears before anything runs. Each generation uses devdive credits.
 
 ## 🎨 Themes
 
@@ -516,9 +516,28 @@ Divee works **on your Mac only** by default. Data leaves your Mac only when you 
 | Update check (once a day, can be off) | App version (request header) | GitHub |
 | Send feedback (only when you submit) | What you wrote + Divee version, macOS version, chip | A GitHub issue, in your browser |
 | Currency plugin (only when on) | A currency code | api.frankfurter.dev |
-| DevDive (coming soon, only when on) | Generation requests (prompts, text) | DevDive servers |
+| devdive plugin (coming soon, only when on) | Generation requests (prompts, text) | devdive servers |
 
 Read screen and the camera look at a single frame and never save it. Accelerometer readings are discarded right after use, and keystrokes are never collected.
+
+## 🗺️ Roadmap
+
+No dates promised — the order may change based on your [feedback](#-feedback).
+
+| Status | What |
+|---|---|
+| 🔨 In progress | **devdive plugin** — generate images, video and speech from the panel, check credits |
+| 🔨 In progress | **Formatted AI answers** — render Markdown such as tables and bold text |
+| 📝 Planned | **devdive MCP** — use devdive's generation, analysis and workflows right inside Claude, ChatGPT and other AI apps |
+| 📝 Planned | **Divee MCP** — expose Divee's features as an MCP server for Claude, Cursor and other AI tools, and connect other MCP servers to Divee's AI |
+| 📝 Planned | **devdive workflows** — run workflows saved in devdive as Divee commands and AI tools |
+| 📝 Planned | **MQTT plugin** — send commands to devices at home, such as Home Assistant |
+| 📝 Planned | **Instant cards + local model** — turn more kinds of sentences into cards with a model on your Mac |
+| 🤔 Considering | **Window tidying** — arrange scattered windows in one go (currently turned off) |
+
+## 👋 Made by
+
+Divee is made by the devdive team at **[Gendive](https://www.gendive.kr)**, an AI company on a mission to *break down the barriers between technology and ideas*. Gendive builds the AI workspace [devdive](https://devdive.ai), creates AI training data and runs hands-on AI training.
 
 ## 💬 Feedback
 

@@ -9,6 +9,7 @@
 **Still running a dozen menu bar apps? Divee is all you need.**
 
 Fans, brightness, key remapping, battery, keep-awake, clipboard, window snapping, capture — the jobs of a dozen apps in one free app, one ⌥Space away.<br>
+**Claude Code & Codex usage**, **agent sessions** and **Apple's on-device AI**, right there too.<br>
 A little mascot lives in your menu bar — Divee by default, or the cat if you prefer.
 
 [![Download](https://img.shields.io/badge/Download-Divee-3478F6?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/dorkman43/divee/releases/latest/download/Divee.dmg)
@@ -18,7 +19,7 @@ A little mascot lives in your menu bar — Divee by default, or the cat if you p
 ![Notarized](https://img.shields.io/badge/Apple-Notarized-2ea44f)
 ![Languages](https://img.shields.io/badge/Languages-English%20·%20한국어-555)
 
-[Instant cards](#-instant-cards) · [How to use](#-how-to-use) · [Features](#-features-in-detail) · [AI assistant](#-ai-assistant) · [Themes](#-themes) · [Shortcuts](#%EF%B8%8F-shortcuts) · [DevDive](#-devdive-integration-coming-soon) · [Install](#-install) · [Trust](#%EF%B8%8F-built-to-be-trusted)
+[AI built in](#-ai-built-in) · [Instant cards](#-instant-cards) · [How to use](#-how-to-use) · [Features](#-features-in-detail) · [AI assistant](#-ai-assistant) · [Themes](#-themes) · [Shortcuts](#%EF%B8%8F-shortcuts) · [DevDive](#-devdive-integration-coming-soon) · [Install](#-install) · [Trust](#%EF%B8%8F-built-to-be-trusted)
 
 <br>
 
@@ -41,6 +42,20 @@ A little mascot lives in your menu bar — Divee by default, or the cat if you p
 <div align="center">
 <img src="images/en/hero-fan.png" width="760" alt="Fan & Temp flyout — one slider per fan">
 </div>
+
+## 🧠 AI built in
+
+If you work alongside AI on your Mac, the extra windows and apps you keep open for it fit into Divee too.
+
+| Feature | What it does | Try |
+|---|---|---|
+| **AI usage** | Shows how much of your Claude Code and Codex 5-hour and weekly limits you've used, as bars — also in the menu bar and with warning colors | `claude usage`, `codex limit` |
+| **Agent sessions** | Tells you which open Claude Code or Codex session is waiting for approval or has a new reply, and lets you reply right from the panel | ⌥⌘J — jump to the waiting session |
+| **Just say it** | Write what you want in a sentence and Divee runs the matching feature. Tries Apple's on-device model (macOS 26+), then Ollama — on your Mac first | `make the screen dimmer`, `keep my Mac awake for 30 minutes` |
+| **Sentence → card** | Sentences no rule catches go to a tiny on-device classifier (24 KB) that picks the right card and marks it **✦ On-device** | `switch to night mode`, `mute my microphone` |
+| **Translation · voice input** | Apple's on-device translation (macOS 15+) and on-device speech recognition — your text and voice stay on your Mac | `안녕하세요 to English`, hold ⌃⌥Space and speak |
+
+Cloud models are used only if you've set up a server, and only when on-device can't handle it or you say "use the cloud" (answers show ☁︎). And anything hard to undo asks first. More: [AI assistant](#-ai-assistant) · [AI & agents modules](#ai--agents)
 
 ## ⚡ Instant cards
 

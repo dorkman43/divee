@@ -331,3 +331,6 @@ td:last-child { padding-right: 0; overflow-wrap: anywhere; }
 
 /* Korean: wide tracking on mono labels splits Hangul syllables apart */
 :lang(ko) .label, :lang(ko) .note { letter-spacing: 0.06em; }
+
+.ph-badge { display: inline-block; margin-top: 14px; line-height: 0; }
+.ph-badge img { max-width: 100%; height: auto; }

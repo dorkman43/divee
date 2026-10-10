@@ -4,17 +4,17 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Divee</title>
         <item>
-            <title>1.0.9</title>
-            <pubDate>Sat, 10 Oct 2026 17:02:24 +0900</pubDate>
-            <sparkle:version>10</sparkle:version>
-            <sparkle:shortVersionString>1.0.9</sparkle:shortVersionString>
+            <title>1.0.10</title>
+            <pubDate>Sun, 11 Oct 2026 02:10:19 +0900</pubDate>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>1.0.10</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[더 가볍게 — 가만히 있을 때 CPU 약 80% 감소(팬 & 온도는 보이거나 필요할 때만 자주 읽기), 패널 메모리 누수 수정, 앱 25MB→13MB. 플러그인 — 설정 › 플러그인 탭 설명·공식 저장소·AI 지침서 링크, 집 안 기기(NAS·공유기·Home Assistant) 접속 권한(localNetwork, ⚠︎ 경고와 함께 동의), 보안 강화(링크 열기·클립보드는 명령 실행 때만, 같은 플러그인 바꿔 설치·파일 변경 시 다시 확인, 테마 글꼴은 동의 뒤, 잘못 만든 플러그인이 앱을 멈추거나 끄지 못하게, 확인 문구는 시스템 글꼴) / Lighter — about 80% less idle CPU (Fan & Temp reads often only when visible or needed), fixed a panel memory leak, app 25 MB → 13 MB. Plugins — Settings › Plugins explains plugins with links to official plugins and AI guides, a Local network devices permission (NAS, router, Home Assistant; approved with a ⚠︎ warning), safer plugins (links and clipboard only when you run a command, re-approval when a plugin is replaced or its files change, theme fonts only after approval, a broken plugin can't freeze or crash Divee, confirmations in the system font).]]></description>
-            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.9/Divee-1.0.9.dmg" length="5692364" type="application/octet-stream" sparkle:edSignature="0ER8T1hwsj2Ctk5xaP+sn5E3SadS32iY2kr1yAeRHPIK9tn5Y9fSqY7IDB/ueRRexwaxVD5NLMBoqm3PNomdBw=="></enclosure>
+            <description><![CDATA[후원 링크 추가(우클릭 메뉴·설정 › 정보) / Added a Support Divee link (right-click menu, Settings › About)]]></description>
+            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.10/Divee-1.0.10.dmg" length="5692417" type="application/octet-stream" sparkle:edSignature="lhVKhH+KdKEdOZUHjgX5pToYrEgySxalOVV0HZblDUfirek6ssNg8Jy2fgnXuui3CJ0gvmXMTPxO7nSoDeC3Bg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: sTtYSxJOCoDfXjcNnw0781iBhpSIRNxrK9UVINdcCXbhnzQ7GVC0l6r2jpYR773qiELzvc9HbrWQwis7hB2VAA==
-length: 2370
+edSignature: H0MjQ650WGAMNLXAWrMPR8At5YMGqY+kKB44//sVDj9vgNAqI8SFaCuvDNbPcJLWSSJ5Oiphav/cLhZspsunBA==
+length: 1294
 -->

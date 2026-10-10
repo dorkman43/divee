@@ -22,7 +22,7 @@
 
 <br>
 
-<img src="images/one-app.png" width="820" alt="Karabiner, Magnet, CleanShot X 등 앱 12개가 하던 일을 Divee 하나로">
+<img src="images/one-app.gif" width="820" alt="Karabiner, Magnet, CleanShot X 등 앱 12개가 하던 일을 Divee 하나로">
 
 <sub>따로 깔던 앱 12개가 하던 일, 이제 Divee 하나로</sub>
 

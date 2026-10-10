@@ -370,12 +370,19 @@
 
 ### 플러그인
 
-설정 › **플러그인**에서 추가한 것을 한눈에 보고, 폴더에서 설치하고, 하나씩 켜고 끄고, 지울 수 있습니다. 플러그인은 설치 전에 필요한 권한(예: 접근할 웹 주소)을 먼저 묻습니다.
+코딩 없이 Divee 에 새 기능·모양·캐릭터를 더할 수 있습니다. 어떤 게 있는지는 **[divee-plugins](https://github.com/dorkman43/divee-plugins)** 에서 보세요.
 
-- **플러그인:** 패널 명령 · 즉석 카드 · AI 도구를 더하는 작은 JS 확장입니다. 특수문자와 환율은 기본 포함이고, 나머지는 직접 추가합니다.
-- **테마 팩**과 **마스코트 팩**도 여기에 나타납니다 — 설치한 마스코트는 다이비 · 고양이 옆 선택지가 됩니다.
-- **직접 만들기:** 개발자가 아니어도 됩니다 — AI 지침서를 따라 AI가 플러그인을 만들어 주고, 고장 나면 고쳐 달라고 할 수도 있습니다.
-- **공식 플러그인:** [github.com/dorkman43/divee-plugins](https://github.com/dorkman43/divee-plugins)
+| 종류 | 더하는 것 | AI로 만들기 |
+|---|---|---|
+| 🧩 플러그인 | 패널 명령 · 즉석 카드 · AI 도구 (작은 JavaScript) | [AI-GUIDE-plugin.md](https://github.com/dorkman43/divee-plugins/blob/main/guides/AI-GUIDE-plugin.md) |
+| 🎨 테마 | 색 · 글꼴 · 글자 크기 · 모서리 · 간격 | [AI-GUIDE-theme.md](https://github.com/dorkman43/divee-plugins/blob/main/guides/AI-GUIDE-theme.md) |
+| 🐾 마스코트 | 나만의 메뉴바 캐릭터 — 다이비 · 고양이 옆 선택지로 | [AI-GUIDE-mascot.md](https://github.com/dorkman43/divee-plugins/blob/main/guides/AI-GUIDE-mascot.md) |
+
+1. **만들기:** AI 지침서를 열어 파일 전체를 AI 채팅(Claude, ChatGPT, Gemini …)에 붙여 넣고 원하는 걸 말하세요 — *"'3마일'을 km 로 바꿔 주는 카드"*, *"드라큘라 같은 테마"*. AI 가 설치할 폴더를 만들어 줍니다. [divee-plugins](https://github.com/dorkman43/divee-plugins) 에서 만들어진 걸 받아도 됩니다.
+2. **설치:** 설정 › **플러그인** › **폴더에서 설치…** → 그 폴더를 고르세요. 플러그인은 설치 전에 필요한 권한(예: 접근할 웹 주소)을 보여 줍니다. 테마와 마스코트는 데이터뿐이라 권한을 묻지 않습니다.
+3. **관리:** 같은 화면에서 하나씩 켜고 끄거나 지울 수 있습니다. 문제가 있으면 **AI에게 고쳐 달라기 복사**를 눌러 같은 채팅에 붙여 넣으세요.
+
+특수문자와 환율은 기본 포함 플러그인입니다 — 같은 목록에서 켜면 됩니다.
 
 ## 🤖 AI 도우미
 

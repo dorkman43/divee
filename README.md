@@ -369,12 +369,19 @@ Appear when you turn on **Show experimental features** in Settings › Features.
 
 ### Plugins
 
-Settings › **Plugins** lists everything you've added. Install from a folder, turn each one on or off, or remove it. A plugin asks for the permissions it needs (for example, which web address it may reach) before it's installed.
+Add new features, looks and characters to Divee — **no coding needed**. See what's available at **[divee-plugins](https://github.com/dorkman43/divee-plugins)**.
 
-- **Plugins:** small JS add-ons that add panel commands, instant cards and AI tools. Special Characters and Currency are bundled; the rest are yours to add.
-- **Theme packs** and **mascot packs** show up in Settings too — installed mascots become a choice next to Divee and the cat.
-- **Make your own:** you don't need to be a developer — an AI guide can write a plugin for you, and you can ask it to fix one that breaks.
-- **Official plugins:** [github.com/dorkman43/divee-plugins](https://github.com/dorkman43/divee-plugins)
+| Kind | What it adds | Make one with AI |
+|---|---|---|
+| 🧩 Plugin | Panel commands, instant cards and AI tools (a little JavaScript) | [AI-GUIDE-plugin.md](https://github.com/dorkman43/divee-plugins/blob/main/guides/AI-GUIDE-plugin.md) |
+| 🎨 Theme | Colors, font, text size, corners, spacing | [AI-GUIDE-theme.md](https://github.com/dorkman43/divee-plugins/blob/main/guides/AI-GUIDE-theme.md) |
+| 🐾 Mascot | Your own menu bar character — shows up next to Divee and the cat | [AI-GUIDE-mascot.md](https://github.com/dorkman43/divee-plugins/blob/main/guides/AI-GUIDE-mascot.md) |
+
+1. **Make one:** open the AI guide, paste the whole file into an AI chat (Claude, ChatGPT, Gemini …) and say what you want — *"a card that turns '3 miles' into km"*, *"a theme like Dracula"*. The AI gives you a folder. Or download a ready-made one from [divee-plugins](https://github.com/dorkman43/divee-plugins).
+2. **Install:** Settings › **Plugins** › **Install from Folder…** → choose that folder. A plugin lists the permissions it needs (for example, which web address it may reach) before it's installed; themes and mascots are data only and never ask.
+3. **Manage:** turn each one on or off, or remove it, on the same page. If something's wrong, press **Copy Fix Request for AI** and paste it back into the chat.
+
+Special Characters and Currency come built in as plugins — turn them on in the same list.
 
 ## 🤖 AI assistant
 

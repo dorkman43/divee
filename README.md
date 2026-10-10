@@ -9,7 +9,7 @@
 **All the little Mac settings, in one menu bar app — one ⌥Space away.**
 
 Fans & temperature, brightness, battery, sleep, key remapping, clipboard history and more, in one free menu bar utility.<br>
-A little cat lives in your menu bar.
+A little mascot lives in your menu bar — Divee by default, or the cat if you prefer.
 
 [![Download](https://img.shields.io/badge/Download-Divee-3478F6?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/dorkman43/divee/releases/latest/download/Divee.dmg)
 
@@ -34,7 +34,7 @@ A little cat lives in your menu bar.
 
 - **One ⌥Space and you're there.** Hover a row under the input field or press → and it **slides out to the side**, just like a Windows right-click menu. Up to three levels deep.
 - **Fully keyboard-driven.** ↑↓ move · → open · ← back · Return run · ESC close. Sliders move with ←/→.
-- **Turn on only what you need.** Pick from 25 modules; modules you turn off don't run at all. Out of the box only System, Battery, Fan & Temp and Checklist are on.
+- **Turn on only what you need.** Pick only the modules (and plugins) you need; ones you turn off don't run at all. Out of the box only System, Battery, Fan & Temp and Checklist are on.
 - **Lightweight.** About 0.6% CPU while the panel is closed and about 1% while it's open. Animations are native macOS ones, and you can turn them off in Settings.
 - **On your Mac by default.** The AI tries on-device models first. Anything that sends data out works only when you turn it on, and Settings shows exactly what's on.
 
@@ -61,7 +61,7 @@ Type a line and it turns into a card **before you press Return** — computed on
 | `claude usage`, `codex limit` | AI usage (Claude Code · Codex limits) |
 | `checklist` | Checklist — the input becomes "Add item", checked items get struck through |
 | `settings`, `bluetooth settings` | Open the matching System Settings pane |
-| `theme nord`, `animations off` | Change Divee by typing (the cat confirms, with undo) |
+| `theme nord`, `animations off` | Change Divee by typing (the mascot confirms, with undo) |
 | `right command korean`, `caps tap esc hold control`, `caps lock to esc` | Key remap cards and simple remaps (Return to apply, with undo) |
 | `find folders named report`, `folders created between sep 1 and sep 15` | Find files by kind · name · place · date range — shows how it understood you |
 | `feedback …`, `bug …` | Send feedback — opens a pre-filled GitHub issue; nothing is sent until you submit it |
@@ -75,7 +75,7 @@ Type a line and it turns into a card **before you press Return** — computed on
 | **Notarized by Apple** | Signed with a Developer ID and notarized, so it opens without warnings. |
 | **Background helper** | Needed only for fan control and Clamshell. It's registered through macOS's own background items, and you approve it **once** in System Settings › General › Login Items. It does exactly three things: set a fan speed / return it to automatic, toggle `pmset disablesleep`, and uninstall itself. Divee and the helper each check the other's code signature, and if Divee stops responding the helper **returns the fans to automatic and turns Clamshell off within 30 seconds.** When Divee updates, the helper updates itself — no new approval. |
 | **Key rules stay local** | Keyboard rules run in a separate, sandboxed process that can't reach the network. It tells Divee only what to do ("switch input"), never which keys you pressed. |
-| **Risky actions ask first** | When the AI wants to do something that can't easily be undone — open a file, run a Shortcut, click something on screen, eject disks and the like — the cat shows what it's about to do and waits: **↩ to run, ESC to cancel.** |
+| **Risky actions ask first** | When the AI wants to do something that can't easily be undone — open a file, run a Shortcut, click something on screen, eject disks and the like — the mascot shows what it's about to do and waits: **↩ to run, ESC to cancel.** |
 | **Signed updates** | Every update and the update feed itself are signed (EdDSA). Divee tells you a new version is out, and nothing installs until you say so. |
 | **What it doesn't collect** | No analytics, telemetry or ad tracking. Keystrokes are never recorded; the screen and camera are looked at once, only when you ask, and never saved. |
 | **What leaves your Mac** | Only for features you turn on, only to the listed destinations — see the [Privacy](#-privacy) table. |
@@ -88,8 +88,8 @@ Type a line and it turns into a card **before you press Return** — computed on
 | How | What happens |
 |---|---|
 | **⌥Space** | Open / close the Divee panel |
-| **Click** the menu bar cat | Opens the same panel |
-| **Right-click** the menu bar cat | Settings… · Pin floating panel · Send Feedback… · Check for Updates… · Quit Divee |
+| **Click** the menu bar mascot | Opens the same panel |
+| **Right-click** the menu bar mascot | Settings… · Pin floating panel · Send Feedback… · Check for Updates… · Quit Divee |
 
 ### The home list
 
@@ -167,10 +167,11 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
   - **Windows keyboard** — swap ⌥ and ⌘ only on the external keyboards you pick
   - **` instead of ₩** while typing Korean
   - Per-app rules, a tap/hold threshold (default 300 ms) and a "Try it now" box
+- **Keyboard picture** (Settings › Key Remap) — click a key on the drawn keyboard to pick what it does. Keys you press light up on it, and keys a card is already using are marked.
 - **Type it:** `right command korean`, `caps tap esc hold control`, `caps lock hyper` — with undo.
 - **Import from Karabiner:** simple modifications come in as-is; complex rules that match a card are shown for you to confirm. Shell commands and app launches are never imported, and the file is never changed.
 - **Advanced:** remap any single key to another (Caps Lock → Esc, Left ⌥ ↔ ⌘, …) with macOS's built-in `hidutil`.
-- **Safe by design:** keys are handled in a separate sandboxed process with no network access. Hold both ⇧ for 2 seconds to turn every rule off. If Divee quits or stops, the keyboard goes back to normal (within 30 seconds with the background helper installed). Rules pause in password fields. Cards need Accessibility — the same permission as the brightness keys; simple remaps need none.
+- **Safe by design:** keys are handled in a separate sandboxed process with no network access. Hold both ⇧ for 2 seconds to turn every rule off. If Divee quits or stops — even if you force-quit it — a tiny key guard puts the keys back to normal within a second (and the background helper does the same within 30 seconds as a backup). Rules pause in password fields. Cards need Accessibility — the same permission as the brightness keys; simple remaps need none.
 </details>
 
 <details>
@@ -221,6 +222,10 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 <summary><b>Clipboard History</b> — get back what you copied</summary>
 
 - Keeps up to the last 20 texts and images; click one to copy it again (images up to 15 MB total).
+- **Paste directly:** choose an item and it's pasted into the app you were using (needs Accessibility; without it, it's just copied).
+- **Pin** up to 10 texts so they stay at the top and survive turning Divee off.
+- **Search:** type part of a copied text in the panel and "Paste · …" results appear.
+- **Paste without formatting** — a command, with its own shortcut you can set in Settings › Shortcuts.
 - Command: Clear History
 - **Ask the AI:** "Copy what I copied earlier again"
 </details>
@@ -240,10 +245,19 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 </details>
 
 <details>
-<summary><b>Special Characters</b> — frequently used symbols, one click away</summary>
+<summary><b>Special Characters</b> — frequently used symbols, one click away <i>(plugin)</i></summary>
 
+- Now a bundled [plugin](#plugins) — if you had it on before, it stays on.
 - Click a symbol to copy it. Includes the Mac key symbols **⌘ ⌥ ⌃ ⇧ ⇪ ⇥ ⏎ ⌫ ⌦ ⎋ ⏏** — plain Unicode, so they paste into messages and docs on other systems too.
 - Edit the list freely in Settings (**Restore Defaults** brings back the full list).
+</details>
+
+<details>
+<summary><b>Currency</b> — convert amounts as you type <i>(plugin, off by default)</i></summary>
+
+- A bundled [plugin](#plugins). Type `100 usd in krw`, `$100`, or `100달러`, `5만원 달러로` and a card shows the converted amount, or `달러 환율` for the rate.
+- Rates are the European Central Bank's (via frankfurter.dev); only a currency code is sent, and rates are cached for 6 hours. Offline, the last saved rate is shown with its date.
+- Choose the default currency in the plugin's settings.
 </details>
 
 <details>
@@ -254,9 +268,46 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 </details>
 
 <details>
-<summary><b>Window Arrange</b> — gather and tile windows <i>(coming soon)</i></summary>
+<summary><b>Window Snap</b> — snap windows to halves, quarters and thirds, Magnet-style</summary>
 
-- Paused while we rework it — it can't be turned on for now. If you had it on, it comes back as it was once it returns.
+- **18 layouts:** left · right · top · bottom halves, four corners, thirds and two-thirds, maximize, center, restore the original place, and next / previous display.
+- **Global shortcuts:** each layout has its own, Magnet-style (e.g. ⌃⌥← left half, ⌃⌥↩ maximize, ⌃⌥⌫ restore). Bottom-left has none by default because ⌃⌥J is Quick note. Change any of them in the module's settings.
+- **⌥Space panel menu:** pick a layout there and it's applied to the window you were just using.
+- **Saved layouts:** save where your windows are now ("Save window layout") and bring them back later ("Restore layout · name").
+- Uses the Accessibility permission. Off by default.
+</details>
+
+<details>
+<summary><b>Capture</b> — screenshots, text capture and recordings</summary>
+
+- **Panel:** Area capture · Area to clipboard · Window · Full screen · Capture toolbar · Screen recording — they use macOS's own `screencapture`.
+- **Text capture:** pick an area of the screen and the text in it is read on your Mac and copied.
+- **Recent captures:** open, show in Finder or copy the image. **Recent recording to GIF** converts the latest recording.
+- Set shortcuts for area and text capture in Settings › Shortcuts. Requires Screen Recording. Off by default.
+</details>
+
+<details>
+<summary><b>Dictation</b> — hold a key and speak, anywhere</summary>
+
+- Set a shortcut in the module's settings (there's none by default): hold it while you speak, or press once to start and again to stop (your choice). The text is pasted into the app you were in. Stops by itself after 2 minutes.
+- **AI cleanup:** tidies spacing, punctuation and fillers like "um" without changing the meaning. A cloud model is used only if you allow it; otherwise, or if it takes too long, the original words are pasted.
+- **Recent dictations:** the last 20 are kept in memory only; paste again or copy. Recognition happens on your Mac. Requires Microphone and Speech Recognition. Off by default.
+</details>
+
+<details>
+<summary><b>Translate</b> — on-device translation</summary>
+
+- Type `hello 한국어로` or `안녕하세요 to English` in the panel and a translation card appears; Return copies it.
+- **Translate selection:** select text in any app and use the "Translate selection" command — Return on the card replaces it, ⌘C copies it. Reading the selection needs Accessibility.
+- Uses Apple's on-device Translation (macOS 15 or later), so the text never leaves your Mac. Off by default.
+</details>
+
+<details>
+<summary><b>Snippets & Quicklinks</b> — text you reuse, links you open</summary>
+
+- **Snippets:** saved text — type its name in the panel and Return pastes it. Placeholders: `{date}` · `{time}` · `{datetime}` · `{clipboard}` · `{cursor}`.
+- **Quicklinks:** a link with `{query}` — type the link's name and a search term to open it (http · https · mailto and app addresses only).
+- Add and edit them in the module's settings. Off by default.
 </details>
 
 <details>
@@ -307,15 +358,23 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 Appear when you turn on **Show experimental features** in Settings › Features.
 
 <details>
-<summary><b>Motion & Knock</b> · <b>Level</b> · <b>Hinge Fold</b> · <b>Camera View</b></summary>
+<summary><b>Motion & Knock</b> · <b>Level</b> · <b>Camera View</b></summary>
 
 - **Motion & Knock:** tap your MacBook (1 · 2 · 3 times) to run an action you choose. Requires Input Monitoring.
 - **Level:** shows your MacBook's tilt as a spirit level.
-- **Hinge Fold:** a visual effect that folds the screen toward the hinge as you close the lid.
 - **Camera View:** takes one webcam look only when the AI asks, analyzes it on your Mac and never saves it.
 </details>
 
 > **Coming soon** — sillog upload and the [DevDive integration](#-devdive-integration-coming-soon) aren't available yet.
+
+### Plugins
+
+Settings › **Plugins** lists everything you've added. Install from a folder, turn each one on or off, or remove it. A plugin asks for the permissions it needs (for example, which web address it may reach) before it's installed.
+
+- **Plugins:** small JS add-ons that add panel commands, instant cards and AI tools. Special Characters and Currency are bundled; the rest are yours to add.
+- **Theme packs** and **mascot packs** show up in Settings too — installed mascots become a choice next to Divee and the cat.
+- **Make your own:** you don't need to be a developer — an AI guide can write a plugin for you, and you can ask it to fix one that breaks.
+- **Official plugins:** [github.com/dorkman43/divee-plugins](https://github.com/dorkman43/divee-plugins)
 
 ## 🤖 AI assistant
 
@@ -372,6 +431,7 @@ Pick one in Settings › General › **Theme** — it applies instantly. Themes 
 | ⌥⌘C | Pick a color on screen |
 | ⌥⌘O | Collapse / expand the floating panel |
 | ⌥⌘J | Jump to a waiting agent session |
+| ⌃⌥ + arrows / letters | Window Snap layouts (e.g. ⌃⌥← left half, ⌃⌥↩ maximize) |
 
 Change any shortcut in Settings › Shortcuts.
 
@@ -379,6 +439,7 @@ Change any shortcut in Settings › Shortcuts.
 
 - **Features:** modules grouped into System · Tools · AI & agents · Experimental. You can open a module's settings even before turning it on.
 - **General:** AI backend, voice input, **Show in menu bar** (up to 2 modules, so the notch doesn't hide them), **Animations**, Theme.
+- **Plugins:** add, remove and turn on or off plugins, theme packs and mascot packs.
 - **Permissions:** see at a glance what's allowed and jump straight to granting it.
 - **About:** what currently sends data out, **export/import settings** (a single JSON file), update checks, **Send feedback…**, replay the welcome guide.
 
@@ -386,11 +447,11 @@ Change any shortcut in Settings › Shortcuts.
 
 1. Download [**Divee.dmg**](https://github.com/dorkman43/divee/releases/latest/download/Divee.dmg).
 2. Open the DMG and drag **Divee** into **Applications**.
-3. Launch Divee — a cat appears in your menu bar and a short welcome guide shows once. Pick what you want (Battery & Heat / Display & Windows / Tools / AI Assistant) and the matching modules turn on.
+3. Launch Divee — the mascot appears in your menu bar and a short welcome guide shows once. Pick what you want (Battery & Heat / Display & Windows / Tools / AI Assistant) and the matching modules turn on.
 
 It's notarized by Apple, so it opens without the "unidentified developer" warning.
 
-**Updates:** Divee checks once a day (turn it off in Settings › About). When a new version is out, a small dot appears on the menu bar cat and the cat tells you — nothing installs until you click **Install**. If you're on 1.0.0, download the new version from the link above just this once.
+**Updates:** Divee checks once a day (turn it off in Settings › About). When a new version is out, a small dot appears on the menu bar mascot and it tells you — nothing installs until you click **Install**. If you're on 1.0.0, download the new version from the link above just this once.
 
 **Used fan control or Clamshell before 1.0.5?** The helper now uses macOS's background items. Open Settings › Fan & Temp, click **Move helper to the new method**, then turn Divee on in System Settings › General › Login Items. From 1.0.6 on, the helper updates itself along with Divee.
 
@@ -402,10 +463,10 @@ Divee asks only for what the features you turn on need, and says why.
 
 | Permission | Used by |
 |---|---|
-| Accessibility | Key remap cards, switching Spaces, brightness keys for external displays, clicking on-screen text |
-| Screen Recording | Read screen, Hinge Fold |
+| Accessibility | Key remap cards, switching Spaces, brightness keys for external displays, clicking on-screen text, Window Snap, paste directly, translate selection |
+| Screen Recording | Read screen, Capture |
 | Calendars · Reminders | Checking and adding events |
-| Microphone · Speech Recognition | Voice input (only while held) |
+| Microphone · Speech Recognition | Voice input and Dictation (only while held) |
 | Automation | Notes, Dark Mode toggle · Empty Trash |
 | Input Monitoring | Motion & Knock, Level (experimental) |
 | Camera | Camera View (experimental) |
@@ -428,13 +489,14 @@ Divee works **on your Mac only** by default. Data leaves your Mac only when you 
 | A remote AI backend you chose | Your sentence | The server you chose |
 | Update check (once a day, can be off) | App version (request header) | GitHub |
 | Send feedback (only when you submit) | What you wrote + Divee version, macOS version, chip | A GitHub issue, in your browser |
+| Currency plugin (only when on) | A currency code | api.frankfurter.dev |
 | DevDive (coming soon, only when on) | Generation requests (prompts, text) | DevDive servers |
 
 Read screen and the camera look at a single frame and never save it. Accelerometer readings are discarded right after use, and keystrokes are never collected.
 
 ## 💬 Feedback
 
-Bug reports and suggestions are welcome. Right-click the menu bar cat › **Send Feedback…**, or type `feedback …` in the ⌥Space panel — it opens a pre-filled [GitHub issue](https://github.com/dorkman43/divee/issues) with your Divee and macOS versions and chip type (nothing else), and you submit it yourself.
+Bug reports and suggestions are welcome. Right-click the menu bar mascot › **Send Feedback…**, or type `feedback …` in the ⌥Space panel — it opens a pre-filled [GitHub issue](https://github.com/dorkman43/divee/issues) with your Divee and macOS versions and chip type (nothing else), and you submit it yourself.
 
 <div align="center">
 <sub>© 2026 dorkman43 · Divee is free to use.</sub>

@@ -4,17 +4,17 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Divee</title>
         <item>
-            <title>1.0.7</title>
-            <pubDate>Fri, 02 Oct 2026 11:06:48 +0900</pubDate>
-            <sparkle:version>8</sparkle:version>
-            <sparkle:shortVersionString>1.0.7</sparkle:shortVersionString>
+            <title>1.0.8</title>
+            <pubDate>Sat, 10 Oct 2026 12:20:47 +0900</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[키보드 키 바꾸기 2단계 — '하고 싶은 일' 카드로 쉽게: 한/영 전환 키(오른쪽 ⌘ 짧게, 지연·첫 글자 씹힘 없이), Caps Lock 짧게=Esc·길게=Control, Hyper 키, 윈도 키보드(외장만 ⌥↔⌘), ₩ 대신 `, 앱별 규칙, Karabiner 설정 가져오기, 패널에서 말로 켜기. 키 처리는 네트워크가 막힌 별도 프로세스에서만, Divee 가 멈추면 자동으로 원래대로. 파일 검색 날짜 범위(‘9월 1일부터 15일까지 만든 폴더’, ‘8월에 받은 pdf’)와 결과 정리, 1.0.6 의 ‘8월’을 이름으로 오해하던 문제 수정 / Keyboard remap stage 2 — simple cards: a Korean/English switch key (tap Right ⌘, no delay, no dropped first letter), Caps Lock tap = Esc / hold = Control, a Hyper key, Windows keyboards (swap ⌥/⌘ on external ones only), ` instead of ₩, per-app rules, Karabiner import, turn them on by typing. Keys are handled only in a separate process with no network access, and everything reverts if Divee stops. File search date ranges (‘folders created between sep 1 and sep 15’, ‘pdfs from august’) with cleaner results, and a fix for 1.0.6 reading ‘August’ as a file name]]></description>
-            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.7/Divee-1.0.7.dmg" length="7013242" type="application/octet-stream" sparkle:edSignature="W4J1/NPMhCBdsvm+VsJ6Ayqa0yPqZ1FLgSmYT8Aigg520Y+wJ1ZV+PHfKq1POXFHtB5SOgogLVH7p/Mup+jRBA=="></enclosure>
+            <description><![CDATA[새 도구 — 캡처(글자 캡처·녹화 GIF), 받아쓰기(누르는 동안·AI 다듬기), 번역(온디바이스), 스니펫·퀵링크, 창 배치(단축키 18개)·창 레이아웃 저장·복원, 클립보드 바로 붙여넣기·고정. 플러그인 — 설정 › 플러그인 탭, 테마·마스코트 팩, 환율·특수문자는 플러그인으로(켜 둔 상태 그대로). 키보드 안전 강화 — Divee 가 강제 종료돼도 1초 안에 키 원래대로, 키보드 그림으로 키 고르기. 새 아이콘·기본 마스코트 다이비. 힌지 폴드 모듈 제거 / New tools — Capture (text capture, GIF recording), Dictation (hold to talk, AI cleanup), on-device Translate, Snippets & Quicklinks, Window snapping (18 shortcuts) and saved window layouts, Clipboard paste & pin. Plugins — a new Plugins tab, theme and mascot packs; Currency and Symbols are now plugins (your on/off is kept). Safer key remap — keys reset within a second even if Divee is force-quit; pick keys on a keyboard picture. New icon and default mascot Divee. Hinge fold module removed.]]></description>
+            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.8/Divee-1.0.8.dmg" length="7957734" type="application/octet-stream" sparkle:edSignature="vYPqrnccQ1hELG3YhtL7WKyUs/RYMe5f5sYq/vp//ZfTCO3/AxXd9u/L7vE7EUl0QMW3quNS118JafNddp9nAw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: PNyAlp0mPjFaxAVvO/RDlPv8ckftjOsoNW2dDvQEtGMo7LsWj/PfkTCwZn40T+Uzdi5iXtcmZ8nOasRPHVaXAA==
-length: 2375
+edSignature: WZj4nwUxWhNKSyKm/Q/fIoTq9Ba/3qdjnZzi2ZL3gIwYwAV3cyQ6gPlzlrIuM2qbYoqUfTh5s5Vwm+4wjdMqCg==
+length: 2255
 -->

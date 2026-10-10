@@ -4,17 +4,17 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Divee</title>
         <item>
-            <title>1.0.8</title>
-            <pubDate>Sat, 10 Oct 2026 12:20:47 +0900</pubDate>
-            <sparkle:version>9</sparkle:version>
-            <sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
+            <title>1.0.9</title>
+            <pubDate>Sat, 10 Oct 2026 17:02:24 +0900</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>1.0.9</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[새 도구 — 캡처(글자 캡처·녹화 GIF), 받아쓰기(누르는 동안·AI 다듬기), 번역(온디바이스), 스니펫·퀵링크, 창 배치(단축키 18개)·창 레이아웃 저장·복원, 클립보드 바로 붙여넣기·고정. 플러그인 — 설정 › 플러그인 탭, 테마·마스코트 팩, 환율·특수문자는 플러그인으로(켜 둔 상태 그대로). 키보드 안전 강화 — Divee 가 강제 종료돼도 1초 안에 키 원래대로, 키보드 그림으로 키 고르기. 새 아이콘·기본 마스코트 다이비. 힌지 폴드 모듈 제거 / New tools — Capture (text capture, GIF recording), Dictation (hold to talk, AI cleanup), on-device Translate, Snippets & Quicklinks, Window snapping (18 shortcuts) and saved window layouts, Clipboard paste & pin. Plugins — a new Plugins tab, theme and mascot packs; Currency and Symbols are now plugins (your on/off is kept). Safer key remap — keys reset within a second even if Divee is force-quit; pick keys on a keyboard picture. New icon and default mascot Divee. Hinge fold module removed.]]></description>
-            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.8/Divee-1.0.8.dmg" length="7957734" type="application/octet-stream" sparkle:edSignature="vYPqrnccQ1hELG3YhtL7WKyUs/RYMe5f5sYq/vp//ZfTCO3/AxXd9u/L7vE7EUl0QMW3quNS118JafNddp9nAw=="></enclosure>
+            <description><![CDATA[더 가볍게 — 가만히 있을 때 CPU 약 80% 감소(팬 & 온도는 보이거나 필요할 때만 자주 읽기), 패널 메모리 누수 수정, 앱 25MB→13MB. 플러그인 — 설정 › 플러그인 탭 설명·공식 저장소·AI 지침서 링크, 집 안 기기(NAS·공유기·Home Assistant) 접속 권한(localNetwork, ⚠︎ 경고와 함께 동의), 보안 강화(링크 열기·클립보드는 명령 실행 때만, 같은 플러그인 바꿔 설치·파일 변경 시 다시 확인, 테마 글꼴은 동의 뒤, 잘못 만든 플러그인이 앱을 멈추거나 끄지 못하게, 확인 문구는 시스템 글꼴) / Lighter — about 80% less idle CPU (Fan & Temp reads often only when visible or needed), fixed a panel memory leak, app 25 MB → 13 MB. Plugins — Settings › Plugins explains plugins with links to official plugins and AI guides, a Local network devices permission (NAS, router, Home Assistant; approved with a ⚠︎ warning), safer plugins (links and clipboard only when you run a command, re-approval when a plugin is replaced or its files change, theme fonts only after approval, a broken plugin can't freeze or crash Divee, confirmations in the system font).]]></description>
+            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.9/Divee-1.0.9.dmg" length="5692364" type="application/octet-stream" sparkle:edSignature="0ER8T1hwsj2Ctk5xaP+sn5E3SadS32iY2kr1yAeRHPIK9tn5Y9fSqY7IDB/ueRRexwaxVD5NLMBoqm3PNomdBw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: WZj4nwUxWhNKSyKm/Q/fIoTq9Ba/3qdjnZzi2ZL3gIwYwAV3cyQ6gPlzlrIuM2qbYoqUfTh5s5Vwm+4wjdMqCg==
-length: 2255
+edSignature: sTtYSxJOCoDfXjcNnw0781iBhpSIRNxrK9UVINdcCXbhnzQ7GVC0l6r2jpYR773qiELzvc9HbrWQwis7hB2VAA==
+length: 2370
 -->

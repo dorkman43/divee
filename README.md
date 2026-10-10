@@ -35,7 +35,7 @@ A little mascot lives in your menu bar — Divee by default, or the cat if you p
 - **One ⌥Space and you're there.** Hover a row under the input field or press → and it **slides out to the side**, just like a Windows right-click menu. Up to three levels deep.
 - **Fully keyboard-driven.** ↑↓ move · → open · ← back · Return run · ESC close. Sliders move with ←/→.
 - **Turn on only what you need.** Pick only the modules (and plugins) you need; ones you turn off don't run at all. Out of the box only System, Battery, Fan & Temp and Checklist are on.
-- **Lightweight.** About 0.6% CPU while the panel is closed and about 1% while it's open. Animations are native macOS ones, and you can turn them off in Settings.
+- **Lightweight.** About 0.2% CPU and ~42 MB of memory while the panel is closed, about 1% CPU while it's open; the app is 13 MB. Animations are native macOS ones, and you can turn them off in Settings.
 - **On your Mac by default.** The AI tries on-device models first. Anything that sends data out works only when you turn it on, and Settings shows exactly what's on.
 
 <div align="center">
@@ -378,10 +378,14 @@ Add new features, looks and characters to Divee — **no coding needed**. See wh
 | 🐾 Mascot | Your own menu bar character — shows up next to Divee and the cat | [AI-GUIDE-mascot.md](https://github.com/dorkman43/divee-plugins/blob/main/guides/AI-GUIDE-mascot.md) |
 
 1. **Make one:** open the AI guide, paste the whole file into an AI chat (Claude, ChatGPT, Gemini …) and say what you want — *"a card that turns '3 miles' into km"*, *"a theme like Dracula"*. The AI gives you a folder. Or download a ready-made one from [divee-plugins](https://github.com/dorkman43/divee-plugins).
-2. **Install:** Settings › **Plugins** › **Install from Folder…** → choose that folder. A plugin lists the permissions it needs (for example, which web address it may reach) before it's installed; themes and mascots are data only and never ask.
+2. **Install:** Settings › **Plugins** › **Install from Folder…** → choose that folder. A plugin lists the permissions it needs (for example, which web address it may reach) before it's installed. Themes and mascots are data only; a theme that brings its own fonts asks before using them.
 3. **Manage:** turn each one on or off, or remove it, on the same page. If something's wrong, press **Copy Fix Request for AI** and paste it back into the chat.
 
 Special Characters and Currency come built in as plugins — turn them on in the same list.
+
+**Devices at home:** a plugin can talk to a NAS, router, Home Assistant or a server on your Mac only if it lists that exact device (`localNetwork`). You'll see a ⚠︎ line for each device before you allow it, and macOS asks for Local Network access the first time.
+
+**Safety:** a plugin can open a link or write to the clipboard only when you run its command. Installing a folder over an installed plugin always asks (and warns if an API key is saved for it), and if a plugin's files change after you approved it, Divee asks again. Confirmation prompts always use the system font.
 
 ## 🤖 AI assistant
 

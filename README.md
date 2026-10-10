@@ -6,9 +6,9 @@
 
 # Divee
 
-**All the little Mac settings, in one menu bar app — one ⌥Space away.**
+**Still running a dozen menu bar apps? Divee is all you need.**
 
-Fans & temperature, brightness, battery, sleep, key remapping, clipboard history and more, in one free menu bar utility.<br>
+Fans, brightness, key remapping, battery, keep-awake, clipboard, window snapping, capture — the jobs of a dozen apps in one free app, one ⌥Space away.<br>
 A little mascot lives in your menu bar — Divee by default, or the cat if you prefer.
 
 [![Download](https://img.shields.io/badge/Download-Divee-3478F6?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/dorkman43/divee/releases/latest/download/Divee.dmg)
@@ -22,9 +22,9 @@ A little mascot lives in your menu bar — Divee by default, or the cat if you p
 
 <br>
 
-<img src="images/en/keyboard-nav.gif" width="820" alt="Drilling into the cascading menu with the keyboard">
+<img src="images/en/one-app.png" width="820" alt="Twelve apps like Karabiner, Magnet and CleanShot X, replaced by Divee">
 
-<sub>Open with ⌥Space and reach "Sleep › Duration › 30 min" with nothing but ↓ and →</sub>
+<sub>The jobs of twelve separate apps, now in one: Divee</sub>
 
 </div>
 

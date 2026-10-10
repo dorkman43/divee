@@ -6,9 +6,9 @@
 
 # Divee
 
-**Mac의 자잘한 설정을 메뉴바 하나에서, ⌥Space 한 번으로.**
+**메뉴바 앱, 아직도 열두 개씩 깔아 쓰세요? Divee 하나면 됩니다.**
 
-팬·온도, 밝기, 배터리, 잠자기, 키 바꾸기, 클립보드까지 한곳에 모은 무료 메뉴바 유틸리티입니다.<br>
+팬·온도, 밝기, 키 바꾸기, 배터리, 잠자기, 클립보드, 창 맞추기, 캡처까지 — 따로 깔던 앱들이 하던 일을 무료 앱 하나에, ⌥Space 한 번으로.<br>
 메뉴바에는 작은 마스코트가 삽니다 — 기본은 다이비, 원하면 고양이로 바꿀 수 있어요.
 
 [![Download](https://img.shields.io/badge/다운로드-Divee-3478F6?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/dorkman43/divee/releases/latest/download/Divee.dmg)
@@ -22,9 +22,9 @@
 
 <br>
 
-<img src="images/keyboard-nav.gif" width="820" alt="키보드로 계단식 메뉴를 펼쳐 들어가는 모습">
+<img src="images/one-app.png" width="820" alt="Karabiner, Magnet, CleanShot X 등 앱 12개가 하던 일을 Divee 하나로">
 
-<sub>⌥Space로 열고 ↓ → 만으로 "잠자기 관리 › 유지 시간 › 30분"까지 들어가는 모습</sub>
+<sub>따로 깔던 앱 12개가 하던 일, 이제 Divee 하나로</sub>
 
 </div>
 

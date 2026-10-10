@@ -22,7 +22,7 @@ A little mascot lives in your menu bar — Divee by default, or the cat if you p
 
 <br>
 
-<img src="images/en/one-app.gif" width="820" alt="Twelve apps like Karabiner, Magnet and CleanShot X, replaced by Divee">
+<img src="images/en/reel.gif" width="820" alt="From a menu bar crammed with twelve apps to Divee — panel, AI usage, agent sessions, on-device AI, translation, key remapping, window snapping">
 
 <sub>The jobs of twelve separate apps, now in one: Divee</sub>
 

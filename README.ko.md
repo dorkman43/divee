@@ -22,7 +22,7 @@
 
 <br>
 
-<img src="images/one-app.gif" width="820" alt="Karabiner, Magnet, CleanShot X 등 앱 12개가 하던 일을 Divee 하나로">
+<img src="images/reel.gif" width="820" alt="앱 12개가 넘치는 메뉴바에서 Divee 하나로 — 패널, AI 사용량, 에이전트 세션, 온디바이스 AI, 번역, 키 바꾸기, 창 맞추기">
 
 <sub>따로 깔던 앱 12개가 하던 일, 이제 Divee 하나로</sub>
 

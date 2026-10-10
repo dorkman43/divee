@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Divee — A dozen menu bar apps in one free Mac app</title>
+<meta name="description" content="Fans, brightness, key remapping, battery, keep-awake, clipboard, window snapping and capture in one free macOS menu bar app — plus Claude Code &amp; Codex usage, agent sessions and on-device AI. One ⌥Space away.">
+<meta name="theme-color" content="#120f26">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://divee.kr/">
+<link rel="alternate" hreflang="en" href="https://divee.kr/">
+<link rel="alternate" hreflang="ko" href="https://divee.kr/ko/">
+<link rel="alternate" hreflang="x-default" href="https://divee.kr/">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Divee">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:url" content="https://divee.kr/">
+<meta property="og:title" content="Divee — A dozen menu bar apps in one free Mac app">
+<meta property="og:description" content="Still running a dozen menu bar apps? Divee is all you need. Free · macOS 14+ · ⌥Space">
+<meta property="og:image" content="https://divee.kr/assets/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Divee — Divee is all you need. Free · macOS 14+ · ⌥Space">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Divee — A dozen menu bar apps in one free Mac app">
+<meta name="twitter:description" content="Still running a dozen menu bar apps? Divee is all you need. Free · macOS 14+ · ⌥Space">
+<meta name="twitter:image" content="https://divee.kr/assets/og-en.jpg">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Divee home">
+      <img src="assets/icon.png" width="32" height="32" alt="">
+      <span>Divee</span>
+    </a>
+    <nav class="header-links" aria-label="Site">
+      <a href="https://github.com/dorkman43/divee">GitHub</a>
+      <a class="lang" href="ko/" hreflang="ko" lang="ko">한국어</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <p class="hero-q">Still running a dozen menu bar apps?</p>
+      <h1 id="hero-title">Divee is all you need.</h1>
+      <p class="lede">Fans, brightness, key remapping, battery, keep-awake, clipboard, window snapping, capture — the jobs of a dozen apps in one free app, one <kbd>⌥Space</kbd> away. Claude Code &amp; Codex usage, agent sessions and Apple's on-device AI, right there too.</p>
+      <div class="cta">
+        <a class="btn" href="https://github.com/dorkman43/divee/releases/latest/download/Divee.dmg">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3v10M5.5 8.5 10 13l4.5-4.5M4 17h12"/></svg>
+          Download Divee
+        </a>
+        <p class="note">Free · macOS 14+ · Apple Silicon · Apple-notarized</p>
+      </div>
+
+      <div class="reel">
+        <video autoplay muted loop playsinline preload="auto" width="1280" height="720" poster="assets/poster-en.jpg" aria-label="20-second reel: from a menu bar crammed with twelve apps to Divee — panel, AI usage, agent sessions, on-device AI, translation, key remapping, window snapping">
+          <source src="assets/reel-en.webm" type="video/webm">
+        </video>
+        <button class="reel-toggle" type="button" hidden data-play="Play" data-pause="Pause"><span aria-hidden="true"></span><span></span></button>
+      </div>
+      <script>
+      (function () {
+        var r = document.querySelector('.reel'), v = r.querySelector('video'), b = r.querySelector('.reel-toggle');
+        var icon = b.children[0], label = b.children[1];
+        function show(paused) {
+          r.classList.toggle('is-paused', paused);
+          icon.textContent = paused ? '▶' : '❚❚';
+          label.textContent = paused ? b.dataset.play : b.dataset.pause;
+        }
+        if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          v.autoplay = false; v.removeAttribute('autoplay'); v.preload = 'metadata'; v.pause();
+          show(true);
+        } else {
+          show(false);
+        }
+        b.hidden = false;
+        b.addEventListener('click', function () { if (v.paused) { v.play(); } else { v.pause(); } });
+        v.addEventListener('play', function () { show(false); });
+        v.addEventListener('pause', function () { show(true); });
+      })();
+      </script>
+      <p class="reel-caption">The jobs of twelve separate apps, now in one: Divee</p>
+    </div>
+  </section>
+
+  <section class="section" id="ai" aria-labelledby="ai-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">01 — AI built in</span>
+        <h2 id="ai-title">AI, right in your menu bar.</h2>
+        <p class="lede">If you work alongside AI on your Mac, the extra windows and apps you keep open for it fit into Divee too.</p>
+      </div>
+      <div class="ai-grid">
+        <article class="card">
+          <h3>AI usage</h3>
+          <p>Shows how much of your Claude Code and Codex 5-hour and weekly limits you've used, as bars — also in the menu bar and with warning colors.</p>
+          <div class="try"><code class="chip">claude usage</code><code class="chip">codex limit</code></div>
+        </article>
+        <article class="card">
+          <h3>Agent sessions</h3>
+          <p>Tells you which open Claude Code or Codex session is waiting for approval or has a new reply, and lets you reply right from the panel.</p>
+          <div class="try"><span class="chip">⌥⌘J — jump to the waiting session</span></div>
+        </article>
+        <article class="card">
+          <h3>Just say it</h3>
+          <p>Write what you want in a sentence and Divee runs the matching feature. Tries Apple's on-device model (macOS 26+), then Ollama — on your Mac first.</p>
+          <div class="try"><code class="chip">make the screen dimmer</code><code class="chip">keep my Mac awake for 30 minutes</code></div>
+        </article>
+        <article class="card">
+          <h3>Sentence → card</h3>
+          <p>Sentences no rule catches go to a tiny on-device classifier (24 KB) that picks the right card and marks it ✦ On-device.</p>
+          <div class="try"><code class="chip">switch to night mode</code><code class="chip">mute my microphone</code></div>
+        </article>
+        <article class="card">
+          <h3>Translation · voice input</h3>
+          <p>Apple's on-device translation (macOS 15+) and on-device speech recognition — your text and voice stay on your Mac.</p>
+          <div class="try"><code class="chip" lang="ko">안녕하세요 to English</code><span class="chip">hold ⌃⌥Space and speak</span></div>
+        </article>
+      </div>
+      <p class="ai-note">Cloud models are used only if you've set up a server, and only when on-device can't handle it or you say “use the cloud” (answers show ☁︎). Anything hard to undo asks first.</p>
+    </div>
+  </section>
+
+  <section class="section-features" aria-label="Features">
+    <div class="wrap">
+
+      <article class="feature" id="panel">
+        <div class="feature-text">
+          <span class="label">02 — One shortcut</span>
+          <h2>One ⌥Space and you're there.</h2>
+          <p>Hover a row or press → and it slides out to the side, just like a Windows right-click menu — up to three levels deep.</p>
+          <ul>
+            <li><strong>Fully keyboard-driven.</strong> ↑↓ move · → open · ← back · Return run · ESC close.</li>
+            <li><strong>Turn on only what you need.</strong> Modules you turn off don't run at all.</li>
+            <li><strong>A little mascot lives in your menu bar</strong> — Divee by default, or the cat if you prefer.</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img src="assets/shots/en/cascade-tools.webp" width="1280" height="1188" loading="lazy" decoding="async" alt="The Divee panel: a search field, a row of quick toggles, and a list of modules, with the Tools group slid out to the side showing Color Picker, Clipboard History, Calendar &amp; Reminders, Capture, Dictation, Translate and more">
+        </figure>
+      </article>
+
+      <article class="feature flip" id="cards">
+        <div class="feature-text">
+          <span class="label">03 — Instant cards</span>
+          <h2>Type a line. Get a card.</h2>
+          <p>It turns into a card before you press Return — computed on your Mac, no AI needed.</p>
+        </div>
+        <ul class="console" aria-label="Examples of typed lines and the cards they become">
+          <li class="console-row"><span class="in">3pm pst in ist</span><span class="out">Time zone conversion</span></li>
+          <li class="console-row"><span class="in">split 2400 between 3</span><span class="out">Split · percent · unit conversion</span></li>
+          <li class="console-row"><span class="in">days until christmas</span><span class="out">Dates and countdowns</span></li>
+          <li class="console-row"><span class="in">timer 25m</span><span class="out">Timer — time left in the menu bar</span></li>
+          <li class="console-row"><span class="in">#ff6b35</span><span class="out">Color (copy HEX · RGB · HSL)</span></li>
+          <li class="console-row"><span class="in">caps lock to esc</span><span class="out">Key remap — Return to apply, with undo</span></li>
+          <li class="console-row"><span class="in">find folders named report</span><span class="out">Find files by kind · name · place · date</span></li>
+        </ul>
+      </article>
+
+      <article class="feature" id="fans">
+        <div class="feature-text">
+          <span class="label">04 — Fan &amp; Temp</span>
+          <h2>Fans and temperatures, under control.</h2>
+          <p>CPU and GPU temperatures and a slider per fan. Drag and release to put that fan in manual mode, or choose Auto · Max · Temperature curve.</p>
+          <ul>
+            <li>Reading temperatures and RPM needs no permission.</li>
+            <li>Changing fan speed uses a small background helper you approve <strong>once</strong> in Login Items.</li>
+            <li>If Divee stops responding, the helper returns the fans to automatic within 30 seconds.</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img src="assets/shots/en/hero-fan.webp" width="1280" height="952" loading="lazy" decoding="async" alt="Fan &amp; Temp flyout: CPU and GPU at 35°C, a slider for Fan 1 and Fan 2, and a Fan Speed menu set to Auto">
+        </figure>
+      </article>
+
+      <article class="feature flip" id="sleep">
+        <div class="feature-text">
+          <span class="label">05 — Sleep</span>
+          <h2>Keep awake. Even with the lid closed.</h2>
+          <p>✓ Keep Awake and ✓ Clamshell (stays on with the lid closed), for as long as you need: indefinitely · 30 min · 1 · 2 · 4 hours.</p>
+          <ul>
+            <li>Or just say it: “Keep my Mac awake for 30 minutes”.</li>
+            <li>Clamshell shows a heat warning when turned on, and turns itself off when Divee quits or stops responding.</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img src="assets/shots/en/sleep.webp" width="1280" height="952" loading="lazy" decoding="async" alt="Sleep flyout with Keep Awake, Clamshell and a Duration menu">
+        </figure>
+      </article>
+
+      <article class="feature" id="light">
+        <div class="feature-text">
+          <span class="label">06 — Lightweight</span>
+          <h2>Light enough to forget it's there.</h2>
+          <p>About 0.2% CPU and ~42 MB of memory while the panel is closed, about 1% CPU while it's open. The app is 13 MB.</p>
+          <ul>
+            <li>CPU with recent history, memory, network, uptime and free disk space — right in the panel.</li>
+            <li>Animations are native macOS ones, and you can turn them off in Settings.</li>
+            <li>Out of the box only System, Battery, Fan &amp; Temp and Checklist are on.</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img src="assets/shots/en/system-monitor.webp" width="1280" height="952" loading="lazy" decoding="async" alt="System flyout: CPU bar with a sparkline, memory bar, and network graph with download and upload speed">
+        </figure>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="more" aria-labelledby="more-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">07 — Also inside</span>
+        <h2 id="more-title">The jobs of a dozen apps.</h2>
+        <p class="lede">Turn each module on or off in Settings › Features.</p>
+      </div>
+      <div class="mini-grid">
+        <div class="card"><h3>Key Remap</h3><p>Karabiner-style key rules, made simple.</p></div>
+        <div class="card"><h3>Display</h3><p>Built-in and external display brightness.</p></div>
+        <div class="card"><h3>Battery</h3><p>Charge, health, cycles, power.</p></div>
+        <div class="card"><h3>Clipboard History</h3><p>Get back what you copied.</p></div>
+        <div class="card"><h3>Window Snap</h3><p>Snap windows to halves, quarters and thirds, Magnet-style.</p></div>
+        <div class="card"><h3>Capture</h3><p>Screenshots, text capture and recordings.</p></div>
+        <div class="card"><h3>Dictation</h3><p>Hold a key and speak, anywhere.</p></div>
+        <div class="card"><h3>Quick Toggles</h3><p>Dark Mode, Mute Microphone, Lock Screen and more.</p></div>
+        <div class="card"><h3>Plugins &amp; themes</h3><p>Add new features, looks and characters — no coding needed.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">08 — Privacy</span>
+        <h2 id="privacy-title">On your Mac by default.</h2>
+        <p class="lede">Data leaves your Mac only when you turn on a feature that needs it, and Settings › About lists exactly what's on.</p>
+      </div>
+      <div class="privacy-grid">
+        <ul class="promises">
+          <li class="card"><strong>Nothing collected.</strong><span>No analytics, telemetry or ad tracking. Keystrokes are never recorded; the screen and camera are looked at once, only when you ask, and never saved.</span></li>
+          <li class="card"><strong>Key rules stay local.</strong><span>Keyboard rules run in a separate, sandboxed process that can't reach the network. It tells Divee only what to do, never which keys you pressed.</span></li>
+          <li class="card"><strong>Risky actions ask first.</strong><span>When the AI wants to do something that can't easily be undone, the mascot shows what it's about to do and waits: ↩ to run, ESC to cancel.</span></li>
+          <li class="card"><strong>Notarized and signed.</strong><span>Signed with a Developer ID and notarized by Apple. Every update and the update feed are signed (EdDSA), and nothing installs until you say so.</span></li>
+        </ul>
+        <div class="card table-card">
+          <h3>What leaves your Mac</h3>
+          <p class="muted">Only for features you turn on, only to these destinations.</p>
+          <table>
+            <thead><tr><th scope="col">Feature</th><th scope="col">What is sent</th><th scope="col">Where</th></tr></thead>
+            <tbody>
+              <tr><td>Weather</td><td>City name</td><td>open-meteo.com</td></tr>
+              <tr><td>Web Search</td><td>Search query</td><td>Bing</td></tr>
+              <tr><td>AI Usage</td><td>Your usage lookup (Codex)</td><td>OpenAI servers</td></tr>
+              <tr><td>A remote AI backend you chose</td><td>Your sentence</td><td>The server you chose</td></tr>
+              <tr><td>Update check (once a day, can be off)</td><td>App version</td><td>GitHub</td></tr>
+              <tr><td>Send feedback (only when you submit)</td><td>What you wrote + Divee version, macOS version, chip</td><td>A GitHub issue, in your browser</td></tr>
+              <tr><td>Currency plugin (only when on)</td><td>A currency code</td><td>api.frankfurter.dev</td></tr>
+            </tbody>
+          </table>
+          <p class="perm-note">Divee asks only for the permissions the features you turn on need, and says why. The background helper for fan control and Clamshell is approved once in Login Items.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="label">09 — FAQ</span>
+        <h2 id="faq-title">Questions</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Is Divee free?</summary>
+          <div><p>Yes. Divee is free to use.</p></div>
+        </details>
+        <details>
+          <summary>What do I need to run it?</summary>
+          <div><p>macOS 14 Sonoma or later on an Apple Silicon Mac (M1 or later). A few features need newer macOS: Apple's on-device model needs macOS 26, and on-device translation needs macOS 15.</p></div>
+        </details>
+        <details>
+          <summary>Does the AI send my data to the cloud?</summary>
+          <div><p>Not by default. The AI is local-first: Apple's on-device model, then Ollama, both on your Mac. It hands off to a server only if you've chosen one, and only when it's needed or you say “use the cloud” — those answers are marked ☁︎.</p></div>
+        </details>
+        <details>
+          <summary>Why does it ask for permissions?</summary>
+          <div><p>Only the features you turn on ask, and they say why — for example, Accessibility for key remap cards and Window Snap, or Screen Recording for Capture. Fan control and Clamshell use a background helper you approve once in System Settings › General › Login Items.</p></div>
+        </details>
+        <details>
+          <summary>How do updates work?</summary>
+          <div><p>Divee checks once a day (you can turn it off in Settings › About). When a new version is out, a small dot appears on the menu bar mascot — nothing installs until you click Install.</p></div>
+        </details>
+        <details>
+          <summary>How do I uninstall it?</summary>
+          <div><p>If you used fan control or Clamshell, click Remove Helper in Settings › Fan &amp; Temp first — it restores your fan and sleep settings. Then quit Divee and move it to the Trash.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="final-title">
+    <div class="wrap">
+      <img src="assets/icon.png" width="88" height="88" loading="lazy" decoding="async" alt="">
+      <h2 id="final-title">Divee is all you need.</h2>
+      <div class="cta">
+        <a class="btn" href="https://github.com/dorkman43/divee/releases/latest/download/Divee.dmg">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3v10M5.5 8.5 10 13l4.5-4.5M4 17h12"/></svg>
+          Download Divee
+        </a>
+        <p class="note">Free · macOS 14+ · Apple Silicon · Apple-notarized</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 dorkman43 · Divee is free to use.</p>
+    <nav aria-label="Footer">
+      <a href="https://github.com/dorkman43/divee">GitHub</a>
+      <a href="https://github.com/dorkman43/divee/releases">Releases</a>
+      <a href="https://github.com/dorkman43/divee/issues">Feedback</a>
+      <a href="ko/" hreflang="ko" lang="ko">한국어</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

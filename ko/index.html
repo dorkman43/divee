@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Divee — 메뉴바 앱 열두 개를 무료 앱 하나로</title>
+<meta name="description" content="팬·온도, 밝기, 키 바꾸기, 배터리, 잠자기, 클립보드, 창 맞추기, 캡처까지 무료 macOS 메뉴바 앱 하나로. Claude Code · Codex 사용량, 에이전트 세션, 온디바이스 AI까지 ⌥Space 한 번으로.">
+<meta name="theme-color" content="#120f26">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://divee.kr/ko/">
+<link rel="alternate" hreflang="en" href="https://divee.kr/">
+<link rel="alternate" hreflang="ko" href="https://divee.kr/ko/">
+<link rel="alternate" hreflang="x-default" href="https://divee.kr/">
+<link rel="icon" type="image/png" href="../assets/icon.png">
+<link rel="apple-touch-icon" href="../assets/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Divee">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://divee.kr/ko/">
+<meta property="og:title" content="Divee — 메뉴바 앱 열두 개를 무료 앱 하나로">
+<meta property="og:description" content="메뉴바 앱, 아직도 열두 개씩 깔아 쓰세요? Divee 하나면 됩니다. 무료 · macOS 14+ · ⌥Space">
+<meta property="og:image" content="https://divee.kr/assets/og-ko.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Divee — Divee 하나면 됩니다. 무료 · macOS 14+ · ⌥Space">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Divee — 메뉴바 앱 열두 개를 무료 앱 하나로">
+<meta name="twitter:description" content="메뉴바 앱, 아직도 열두 개씩 깔아 쓰세요? Divee 하나면 됩니다. 무료 · macOS 14+ · ⌥Space">
+<meta name="twitter:image" content="https://divee.kr/assets/og-ko.jpg">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Divee 처음으로">
+      <img src="../assets/icon.png" width="32" height="32" alt="">
+      <span>Divee</span>
+    </a>
+    <nav class="header-links" aria-label="사이트">
+      <a href="https://github.com/dorkman43/divee">GitHub</a>
+      <a class="lang" href="../" hreflang="en" lang="en">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <p class="hero-q">메뉴바 앱, 아직도 열두 개씩 깔아 쓰세요?</p>
+      <h1 id="hero-title">Divee 하나면 됩니다.</h1>
+      <p class="lede">팬·온도, 밝기, 키 바꾸기, 배터리, 잠자기, 클립보드, 창 맞추기, 캡처까지 — 따로 깔던 앱들이 하던 일을 무료 앱 하나에, <kbd>⌥Space</kbd> 한 번으로. Claude Code · Codex 사용량과 에이전트 세션, Apple 온디바이스 AI까지 같은 자리에서.</p>
+      <div class="cta">
+        <a class="btn" href="https://github.com/dorkman43/divee/releases/latest/download/Divee.dmg">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3v10M5.5 8.5 10 13l4.5-4.5M4 17h12"/></svg>
+          Divee 다운로드
+        </a>
+        <p class="note">무료 · macOS 14+ · Apple Silicon · Apple 공증 완료</p>
+      </div>
+
+      <div class="reel">
+        <video autoplay muted loop playsinline preload="auto" width="1280" height="720" poster="../assets/poster-ko.jpg" aria-label="20초 소개 영상: 앱 12개가 넘치는 메뉴바에서 Divee 하나로 — 패널, AI 사용량, 에이전트 세션, 온디바이스 AI, 번역, 키 바꾸기, 창 맞추기">
+          <source src="../assets/reel-ko.webm" type="video/webm">
+        </video>
+        <button class="reel-toggle" type="button" hidden data-play="재생" data-pause="일시정지"><span aria-hidden="true"></span><span></span></button>
+      </div>
+      <script>
+      (function () {
+        var r = document.querySelector('.reel'), v = r.querySelector('video'), b = r.querySelector('.reel-toggle');
+        var icon = b.children[0], label = b.children[1];
+        function show(paused) {
+          r.classList.toggle('is-paused', paused);
+          icon.textContent = paused ? '▶' : '❚❚';
+          label.textContent = paused ? b.dataset.play : b.dataset.pause;
+        }
+        if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          v.autoplay = false; v.removeAttribute('autoplay'); v.preload = 'metadata'; v.pause();
+          show(true);
+        } else {
+          show(false);
+        }
+        b.hidden = false;
+        b.addEventListener('click', function () { if (v.paused) { v.play(); } else { v.pause(); } });
+        v.addEventListener('play', function () { show(false); });
+        v.addEventListener('pause', function () { show(true); });
+      })();
+      </script>
+      <p class="reel-caption">따로 깔던 앱 12개가 하던 일, 이제 Divee 하나로</p>
+    </div>
+  </section>
+
+  <section class="section" id="ai" aria-labelledby="ai-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">01 — AI 기능</span>
+        <h2 id="ai-title">AI도 메뉴바에서 바로.</h2>
+        <p class="lede">AI와 같이 일하는 Mac이라면, 따로 띄워 두던 창과 앱도 Divee 하나로 됩니다.</p>
+      </div>
+      <div class="ai-grid">
+        <article class="card">
+          <h3>AI 사용량</h3>
+          <p>Claude Code · Codex의 5시간 · 주간 한도를 얼마나 썼는지 막대로 보여 주고, 메뉴바와 경고 색으로도 알려 줍니다.</p>
+          <div class="try"><code class="chip">클로드 사용량</code><code class="chip">codex 한도</code></div>
+        </article>
+        <article class="card">
+          <h3>에이전트 세션</h3>
+          <p>열려 있는 Claude Code · Codex 세션 중 승인을 기다리거나 새 답이 온 세션을 알려 주고, 패널에서 바로 답장합니다.</p>
+          <div class="try"><span class="chip">⌥⌘J — 기다리는 세션으로 이동</span></div>
+        </article>
+        <article class="card">
+          <h3>말로 시키기</h3>
+          <p>하고 싶은 일을 문장으로 쓰면 켜 둔 기능을 대신 실행합니다. Apple 온디바이스 모델(macOS 26 이상) → Ollama 순으로 이 Mac 안에서 먼저 처리합니다.</p>
+          <div class="try"><code class="chip">화면 좀 어둡게</code><code class="chip">30분 동안 잠자기 막아 줘</code></div>
+        </article>
+        <article class="card">
+          <h3>문장 → 카드</h3>
+          <p>규칙에 안 걸리는 문장도 Mac 안의 작은 분류기(24 KB)가 알맞은 카드를 골라 ✦ 온디바이스 표시를 붙입니다.</p>
+          <div class="try"><code class="chip">야간 모드로 바꿔줘</code><code class="chip">노션 좀 꺼줘</code></div>
+        </article>
+        <article class="card">
+          <h3>번역 · 음성 입력</h3>
+          <p>Apple 온디바이스 번역(macOS 15 이상)과 이 Mac 안의 음성 인식 — 글과 목소리가 밖으로 나가지 않습니다.</p>
+          <div class="try"><code class="chip">hello 한국어로</code><span class="chip">⌃⌥Space를 누른 채 말하기</span></div>
+        </article>
+      </div>
+      <p class="ai-note">클라우드 모델은 서버를 직접 지정했을 때만, 이 Mac 안에서 안 되거나 “클라우드로”라고 할 때 씁니다(답에 ☁︎ 표시). 되돌리기 어려운 일은 실행 전에 먼저 묻습니다.</p>
+    </div>
+  </section>
+
+  <section class="section-features" aria-label="기능">
+    <div class="wrap">
+
+      <article class="feature" id="panel">
+        <div class="feature-text">
+          <span class="label">02 — 단축키 하나</span>
+          <h2>⌥Space 한 번이면 끝.</h2>
+          <p>항목에 마우스를 올리거나 → 를 누르면, Windows 우클릭 메뉴처럼 옆으로 펼쳐집니다. 최대 3단까지 이어집니다.</p>
+          <ul>
+            <li><strong>키보드만으로도 다 됩니다.</strong> ↑↓ 이동 · → 펼치기 · ← 접기 · Return 실행 · ESC 닫기.</li>
+            <li><strong>원하는 기능만 켭니다.</strong> 꺼 둔 모듈은 아예 돌지 않습니다.</li>
+            <li><strong>메뉴바에는 작은 마스코트가 삽니다</strong> — 기본은 다이비, 원하면 고양이로 바꿀 수 있어요.</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img src="../assets/shots/ko/cascade-tools.webp" width="1280" height="1188" loading="lazy" decoding="async" alt="Divee 패널: 입력창, 빠른 토글 버튼 줄, 모듈 목록이 있고, 작업 도구 묶음이 옆으로 펼쳐져 컬러 픽커 · 클립보드 히스토리 · 일정 & 미리 알림 · 캡처 · 받아쓰기 · 번역 등이 보이는 모습">
+        </figure>
+      </article>
+
+      <article class="feature flip" id="cards">
+        <div class="feature-text">
+          <span class="label">03 — 즉석 카드</span>
+          <h2>한 줄 치면, 바로 카드.</h2>
+          <p>Enter를 누르기 전에 바로 카드로 바뀝니다. AI 없이 이 Mac 안에서 계산하고, 한글을 조합하는 중에도 바로 반영됩니다.</p>
+        </div>
+        <ul class="console" aria-label="입력 예시와 바뀌는 카드">
+          <li class="console-row"><span class="in">뉴욕 지금 몇 시</span><span class="out">시간대 변환</span></li>
+          <li class="console-row"><span class="in">24000원 3명</span><span class="out">나누기 · 퍼센트 · 단위 변환</span></li>
+          <li class="console-row"><span class="in">크리스마스까지</span><span class="out">날짜 · 디데이</span></li>
+          <li class="console-row"><span class="in">25분 집중</span><span class="out">타이머 — 메뉴바에 남은 시간</span></li>
+          <li class="console-row"><span class="in">#ff6b35</span><span class="out">색상 (HEX · RGB · HSL 복사)</span></li>
+          <li class="console-row"><span class="in">dkssudgktpdy</span><span class="out">한영 오타 → 안녕하세요</span></li>
+          <li class="console-row"><span class="in">캡스락을 esc로</span><span class="out">키 바꾸기 — Return으로 실행, 되돌리기</span></li>
+        </ul>
+      </article>
+
+      <article class="feature" id="fans">
+        <div class="feature-text">
+          <span class="label">04 — 팬 &amp; 온도</span>
+          <h2>팬과 온도, 직접 조절.</h2>
+          <p>CPU·GPU 온도와 팬마다 조절바. 끌어서 놓으면 그 팬이 수동이 되고, 자동 · 최대 · 온도 연동도 고를 수 있습니다.</p>
+          <ul>
+            <li>온도와 RPM 읽기는 권한이 필요 없습니다.</li>
+            <li>팬 속도를 바꾸려면 작은 백그라운드 도우미를 로그인 항목에서 <strong>한 번만</strong> 승인하면 됩니다.</li>
+            <li>Divee가 멈추면 도우미가 30초 안에 팬을 자동으로 되돌립니다.</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img src="../assets/shots/ko/hero-fan.webp" width="1280" height="952" loading="lazy" decoding="async" alt="팬 &amp; 온도 펼침: CPU · GPU 온도, 팬 1 · 팬 2 조절바, 자동으로 설정된 팬 속도 메뉴">
+        </figure>
+      </article>
+
+      <article class="feature flip" id="sleep">
+        <div class="feature-text">
+          <span class="label">05 — 잠자기 관리</span>
+          <h2>잠자기 방지. 덮개를 닫아도.</h2>
+          <p>✓ 잠자기 방지, ✓ 닫힘 모드(덮개를 닫아도 계속 켜 둠) — 무기한 · 30분 · 1 · 2 · 4시간.</p>
+          <ul>
+            <li>말로 해도 됩니다: “30분 동안 잠자기 막아 줘”.</li>
+            <li>닫힘 모드는 켤 때 발열 주의 안내가 나오고, Divee를 끄거나 Divee가 멈추면 저절로 꺼집니다.</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img src="../assets/shots/ko/sleep.webp" width="1280" height="952" loading="lazy" decoding="async" alt="잠자기 관리 펼침: 잠자기 방지, 닫힘 모드, 유지 시간 메뉴">
+        </figure>
+      </article>
+
+      <article class="feature" id="light">
+        <div class="feature-text">
+          <span class="label">06 — 가벼움</span>
+          <h2>있는 줄도 모르게 가볍게.</h2>
+          <p>패널이 닫혀 있을 때 CPU 약 0.2%·메모리 약 42MB, 열어 둬도 CPU 약 1%. 앱 크기는 13MB입니다.</p>
+          <ul>
+            <li>CPU(최근 흐름 그래프), 메모리, 네트워크, 업타임, 디스크 남은 공간을 패널에서 바로.</li>
+            <li>애니메이션은 macOS 기본 방식만 쓰고, 설정에서 끌 수 있습니다.</li>
+            <li>처음에는 시스템 모니터링 · 배터리 · 팬 &amp; 온도 · 체크리스트 4개만 켜져 있습니다.</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img src="../assets/shots/ko/system-monitor.webp" width="1280" height="952" loading="lazy" decoding="async" alt="시스템 모니터링 펼침: 그래프가 붙은 CPU 막대, 메모리 막대, 다운로드 · 업로드 속도가 보이는 네트워크 그래프">
+        </figure>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="more" aria-labelledby="more-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">07 — 그 밖에도</span>
+        <h2 id="more-title">따로 깔던 앱들이 하던 일.</h2>
+        <p class="lede">각 모듈은 설정 › 기능에서 켜고 끕니다.</p>
+      </div>
+      <div class="mini-grid">
+        <div class="card"><h3>키 바꾸기</h3><p>Karabiner 같은 키 규칙을 쉽게.</p></div>
+        <div class="card"><h3>디스플레이</h3><p>내장·외장 모니터 밝기.</p></div>
+        <div class="card"><h3>배터리</h3><p>잔량·건강도·사이클·전력.</p></div>
+        <div class="card"><h3>클립보드 히스토리</h3><p>복사한 것 다시 꺼내기.</p></div>
+        <div class="card"><h3>창 맞추기</h3><p>Magnet처럼 창을 반쪽·사분면·1/3에 맞추기.</p></div>
+        <div class="card"><h3>캡처</h3><p>스크린샷 · 글자 캡처 · 화면 녹화.</p></div>
+        <div class="card"><h3>받아쓰기</h3><p>어디서나 키를 누르고 말하기.</p></div>
+        <div class="card"><h3>빠른 토글</h3><p>다크 모드 · 마이크 음소거 · 화면 잠금 등 자주 쓰는 스위치.</p></div>
+        <div class="card"><h3>플러그인 &amp; 테마</h3><p>코딩 없이 새 기능·모양·캐릭터를 더하기.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">08 — 개인정보</span>
+        <h2 id="privacy-title">기본은 이 Mac 안에서만.</h2>
+        <p class="lede">필요한 기능을 켰을 때만 데이터가 밖으로 나가며, 설정 › 정보에 지금 켜진 항목이 그대로 표시됩니다.</p>
+      </div>
+      <div class="privacy-grid">
+        <ul class="promises">
+          <li class="card"><strong>모으지 않습니다.</strong><span>사용 통계·분석·광고 추적이 없습니다. 키보드 입력을 기록하지 않고, 화면·카메라는 요청한 순간 한 장만 보고 저장하지 않습니다.</span></li>
+          <li class="card"><strong>키 입력은 Mac 안에서만.</strong><span>키 규칙은 네트워크에 닿을 수 없는 별도의 샌드박스 프로세스에서 처리합니다. Divee에는 할 일만 전하고, 어떤 키를 눌렀는지는 전하지 않습니다.</span></li>
+          <li class="card"><strong>위험한 작업은 먼저 묻기.</strong><span>AI가 되돌리기 어려운 일을 하려 하면 마스코트가 무엇을 할지 보여 주고 기다립니다: ↩ 실행, ESC 취소.</span></li>
+          <li class="card"><strong>공증과 서명.</strong><span>Developer ID로 서명하고 Apple 공증을 마쳤습니다. 업데이트 파일과 업데이트 목록(피드) 모두 서명(EdDSA)돼 있고, 직접 설치를 누르기 전엔 아무것도 설치하지 않습니다.</span></li>
+        </ul>
+        <div class="card table-card">
+          <h3>밖으로 나가는 것</h3>
+          <p class="muted">켠 기능만, 정해진 곳으로만.</p>
+          <table>
+            <thead><tr><th scope="col">기능</th><th scope="col">보내는 것</th><th scope="col">받는 곳</th></tr></thead>
+            <tbody>
+              <tr><td>날씨</td><td>도시 이름</td><td>open-meteo.com</td></tr>
+              <tr><td>웹 검색</td><td>검색어</td><td>Bing</td></tr>
+              <tr><td>AI 사용량</td><td>내 사용량 조회 (Codex)</td><td>OpenAI 서버</td></tr>
+              <tr><td>원격 AI 백엔드를 직접 고른 경우</td><td>입력한 문장</td><td>고른 서버</td></tr>
+              <tr><td>업데이트 확인 (하루 1회, 끌 수 있음)</td><td>앱 버전</td><td>GitHub</td></tr>
+              <tr><td>피드백 보내기 (직접 제출할 때만)</td><td>적은 내용 + Divee 버전 · macOS 버전 · 칩</td><td>브라우저에서 여는 GitHub 이슈</td></tr>
+              <tr><td>환율 플러그인 (켤 때만)</td><td>통화 코드</td><td>api.frankfurter.dev</td></tr>
+            </tbody>
+          </table>
+          <p class="perm-note">켜는 기능에 필요한 권한만, 이유와 함께 물어봅니다. 팬 속도 조절 · 닫힘 모드용 백그라운드 도우미는 로그인 항목에서 한 번만 승인합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="label">09 — 자주 묻는 질문</span>
+        <h2 id="faq-title">궁금한 점</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>정말 무료인가요?</summary>
+          <div><p>네. Divee는 무료로 쓸 수 있습니다.</p></div>
+        </details>
+        <details>
+          <summary>어떤 Mac에서 돌아가나요?</summary>
+          <div><p>macOS 14 Sonoma 이상, Apple Silicon Mac(M1 이후)이 필요합니다. 일부 기능은 더 새 macOS가 필요합니다 — Apple 온디바이스 모델은 macOS 26 이상, 온디바이스 번역은 macOS 15 이상.</p></div>
+        </details>
+        <details>
+          <summary>AI가 내 데이터를 클라우드로 보내나요?</summary>
+          <div><p>기본은 아닙니다. AI는 로컬 우선이라 Apple 온디바이스 → Ollama 순으로 이 Mac 안에서 처리합니다. 서버를 직접 지정했을 때만, 안 될 때나 “클라우드로”라고 할 때 그 서버로 넘기고, 넘긴 답에는 ☁︎가 붙습니다.</p></div>
+        </details>
+        <details>
+          <summary>권한은 왜 묻나요?</summary>
+          <div><p>켜는 기능에 필요한 권한만, 이유와 함께 묻습니다 — 예를 들어 키 바꾸기 카드와 창 맞추기는 손쉬운 사용, 캡처는 화면 기록. 팬 조절과 닫힘 모드는 시스템 설정 › 일반 › 로그인 항목에서 한 번만 승인하는 백그라운드 도우미를 씁니다.</p></div>
+        </details>
+        <details>
+          <summary>업데이트는 어떻게 되나요?</summary>
+          <div><p>하루 한 번 새 버전을 확인합니다(설정 › 정보에서 끌 수 있음). 새 버전이 있으면 메뉴바 마스코트에 작은 점이 뜨고 — <strong>설치</strong>를 누르기 전엔 아무것도 설치하지 않습니다.</p></div>
+        </details>
+        <details>
+          <summary>지우려면 어떻게 하나요?</summary>
+          <div><p>팬 조절이나 닫힘 모드를 썼다면 설정 › 팬 &amp; 온도에서 <strong>도우미 제거</strong>를 먼저 누르세요 — 팬·잠자기 설정을 원래대로 돌려놓습니다. 그다음 Divee를 종료하고 앱을 휴지통으로 옮기면 됩니다.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="final-title">
+    <div class="wrap">
+      <img src="../assets/icon.png" width="88" height="88" loading="lazy" decoding="async" alt="">
+      <h2 id="final-title">Divee 하나면 됩니다.</h2>
+      <div class="cta">
+        <a class="btn" href="https://github.com/dorkman43/divee/releases/latest/download/Divee.dmg">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3v10M5.5 8.5 10 13l4.5-4.5M4 17h12"/></svg>
+          Divee 다운로드
+        </a>
+        <p class="note">무료 · macOS 14+ · Apple Silicon · Apple 공증 완료</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 dorkman43 · Divee는 무료로 쓸 수 있습니다.</p>
+    <nav aria-label="바닥글">
+      <a href="https://github.com/dorkman43/divee">GitHub</a>
+      <a href="https://github.com/dorkman43/divee/releases">릴리스</a>
+      <a href="https://github.com/dorkman43/divee/issues">피드백</a>
+      <a href="../" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

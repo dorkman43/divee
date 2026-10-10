@@ -544,6 +544,10 @@ Divee는 **[젠다이브(Gendive)](https://www.gendive.kr)** 의 devdive 팀이 
 
 버그나 제안은 언제든 환영합니다. 메뉴바 마스코트 우클릭 › **피드백 보내기…**, 또는 ⌥Space 패널에 `피드백 …`이라고 치면 내용이 채워진 [GitHub 이슈](https://github.com/dorkman43/divee/issues)가 열립니다. Divee·macOS 버전과 칩 종류만 붙고(그 밖엔 없음), 제출은 직접 누릅니다.
 
+## ☕ 후원
+
+Divee는 무료이고 앞으로도 무료입니다. 유료 앱 몇 개를 덜 사게 됐다면 [원하는 만큼 후원](https://pay.devdive.ai/checkout/buy/dbd26817-d019-4404-b052-c1ff8ce8ae5d)해 주세요. 메뉴바 마스코트 우클릭 › **커피 한 잔 사주기…** 로도 열 수 있습니다.
+
 <div align="center">
 <sub>© 2026 dorkman43 · Divee는 무료로 쓸 수 있습니다.</sub>
 </div>

@@ -543,6 +543,10 @@ Divee is made by the devdive team at **[Gendive](https://www.gendive.kr)**, an A
 
 Bug reports and suggestions are welcome. Right-click the menu bar mascot › **Send Feedback…**, or type `feedback …` in the ⌥Space panel — it opens a pre-filled [GitHub issue](https://github.com/dorkman43/divee/issues) with your Divee and macOS versions and chip type (nothing else), and you submit it yourself.
 
+## ☕ Support
+
+Divee is free and stays free. If it replaced a few paid apps on your Mac, you can [chip in what you like](https://pay.devdive.ai/checkout/buy/dbd26817-d019-4404-b052-c1ff8ce8ae5d) — right-click the menu bar mascot › **Buy Me a Coffee…** gets you there too.
+
 <div align="center">
 <sub>© 2026 dorkman43 · Divee is free to use.</sub>
 </div>

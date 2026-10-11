@@ -4,30 +4,28 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Divee</title>
         <item>
-            <title>1.0.11</title>
-            <pubDate>Mon, 12 Oct 2026 03:25:29 +0900</pubDate>
-            <sparkle:version>12</sparkle:version>
-            <sparkle:shortVersionString>1.0.11</sparkle:shortVersionString>
+            <title>1.0.12</title>
+            <pubDate>Mon, 12 Oct 2026 04:39:31 +0900</pubDate>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>1.0.12</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>🇰🇷 1.0.11</h3>
+            <description><![CDATA[<h3>🇰🇷 1.0.12</h3>
 <ul>
-<li><b>파일 변환</b>(설정에서 켜기) — Finder에서 고르거나 메뉴바에 끌어 놓은 파일을 이미지·PDF·영상·소리·문서·ZIP으로. 파일을 끄는 중 ⌃를 누르면 커서 옆에 형식 조각, 감시 폴더 자동 변환. macOS 기본 기능만 써서 파일이 Mac 밖으로 나가지 않아요.</li>
-<li><b>"남은 거?"</b> — 오늘 남은 일정·미리알림·입력 기다리는 세션·루틴 결과를 한 카드로, 캘린더끼리 다르게 적힌 일정도 알려 줘요.</li>
-<li><b>예약 루틴</b> — 빠른 실행에 요일·시각을 붙여 자동 실행.</li>
-<li>외장 모니터 밝기 명령이 실패하면 알려 주고 값을 되돌려요. 전환 애니메이션 다듬기, 일정 질문이 엉뚱한 카드로 가던 문제 수정.</li>
+<li><b>ZIP 한글이 Windows에서도 안 깨져요</b> — 이름을 UTF-8 표시와 함께 저장하고, Mac 전용 파일(__MACOSX·._)은 넣지 않아요. 오래된 프로그램용 "한글 Windows용(CP949)" 선택도 있어요.</li>
+<li><b>Windows에서 만든 ZIP도 한글 그대로 풀기</b> — 이름 인코딩을 알아서 판별해요. 손상되었거나 비정상적으로 커지는 ZIP은 풀지 않아요.</li>
+<li><b>이름 자모 합치기</b> — Mac에서 만든 파일 이름이 Windows에서 ㅎㅏㄴㄱㅡㄹ처럼 보이지 않게 합쳐 줘요. 변환 결과 이름도 항상 합친 형태로 저장해요.</li>
 </ul>
-<h3>🇺🇸 1.0.11</h3>
+<h3>🇺🇸 1.0.12</h3>
 <ul>
-<li><b>File conversion</b> (turn on in Settings) — convert files picked in Finder or dropped on the menu bar to image, PDF, video, audio, document or ZIP formats. Hold ⌃ while dragging files for a format ring, or set watch folders. Uses built-in macOS features only — files never leave your Mac.</li>
-<li><b>"What's left?"</b> — today's remaining events, reminders, waiting agent sessions and routine results in one card, plus calendar entries that disagree.</li>
-<li><b>Scheduled routines</b> — attach days and a time to a Quick Run.</li>
-<li>External monitor brightness now tells you when the monitor doesn't respond. Smoother transitions; calendar questions no longer land on the wrong card.</li>
+<li><b>ZIP files keep Korean names on Windows</b> — names are stored with the UTF-8 flag and Mac-only files (__MACOSX, ._) are left out. A "For Korean Windows (CP949)" option is there for older tools.</li>
+<li><b>Unzip archives made on Windows with their names intact</b> — the name encoding is detected automatically. Damaged ZIPs and ZIP bombs are refused.</li>
+<li><b>Compose Korean names</b> — fixes Mac file names that show up as separated jamo on Windows. Converted files always get composed names.</li>
 </ul>]]></description>
-            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.11/Divee-1.0.11.dmg" length="5936807" type="application/octet-stream" sparkle:edSignature="CP3LgfxxRyr/vep37vik8yDCXkWYrnzCLbxphtfSHLTz2wpSctAnUy92K11U6VK0DjuFBVz5b80nVRchexuUAQ=="></enclosure>
+            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.0.12/Divee-1.0.12.dmg" length="5976117" type="application/octet-stream" sparkle:edSignature="MIgOPt74zXlksrdQpW/QsqyFS5aBZj6pfU6uktFPOtKlS0GtH9eS17Dz9Mh3HahUzq+wx+uUAFbFf28nxkNfAQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: uXke56ry7E2BZUxowkGrTHgkUBk5MPcJjalOD9U5D1iGtXKFUCWejb6bshs9KSFQSlSLR+i7QNPe2OIqt1HZCA==
-length: 2753
+edSignature: NsRQ31FSj7GdJcCCktxV/sRL5l9mZ4oA/ZlQRHqagyxK2vWPXWQWnFG/rkqS8iCFEvf5HY8BQIRmePbgZZkVCw==
+length: 2395
 -->

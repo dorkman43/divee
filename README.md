@@ -308,6 +308,7 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 - **Formats:** images (HEIC · JPEG · PNG · TIFF · GIF · BMP, resize, strip metadata), PDF (merge, split, pages ↔ images), video (MOV ↔ MP4, 720p/1080p, HEVC, to GIF), audio (M4A · WAV · AIFF), documents (DOCX · RTF · HTML · TXT · Markdown) and ZIP (pack · unpack).
 - **Ways in:** select files in Finder and open the panel → "File Conversion", type `png`, `merge pdf`, `mp4`, `zip` with files attached, drop files on the menu bar icon, or hold **⌃ while dragging files** for a format ring at the cursor (needs Accessibility).
 - **Watch folders:** new files that land in a folder are converted automatically; originals move to an "Originals" folder.
+- **Windows-friendly ZIP:** Korean (and other non-English) names stay readable on Windows — names are stored with the UTF-8 flag and no `__MACOSX` clutter, with a CP949 option for older tools. ZIPs made on Windows unpack with their names intact, and **Compose Korean Names** fixes file names that show up as separated jamo on Windows.
 - Results are saved next to the originals, which are never changed. Uses only macOS's own frameworks and tools — files never leave your Mac, nothing extra to download. Off by default.
 </details>
 

@@ -69,6 +69,7 @@ Type a line and it turns into a card **before you press Return** — computed on
 | `weather tokyo` | Weather (with the Weather module on) |
 | `what's tomorrow`, `lunch with anna tomorrow` | View and add events — details open right inside the panel |
 | `buy milk, eggs and bread` | Checklist → Reminders |
+| `what's left`, `anything left today` | What's left today — remaining events, due reminders, agent sessions waiting for you, routine results, and calendar entries that disagree |
 | `timer 25m` | Timer — time left in the menu bar; pause, extend and cancel in the panel |
 | `#ff6b35`, `tiffany blue` | Color (copy HEX · RGB · HSL) |
 | `what's slow`, `quit slack` | Apps using the most CPU · quit an app |
@@ -299,6 +300,15 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 - **Text capture:** pick an area of the screen and the text in it is read on your Mac and copied.
 - **Recent captures:** open, show in Finder or copy the image. **Recent recording to GIF** converts the latest recording.
 - Set shortcuts for area and text capture in Settings › Shortcuts. Requires Screen Recording. Off by default.
+</details>
+
+<details>
+<summary><b>File Conversion</b> — convert files without leaving your Mac</summary>
+
+- **Formats:** images (HEIC · JPEG · PNG · TIFF · GIF · BMP, resize, strip metadata), PDF (merge, split, pages ↔ images), video (MOV ↔ MP4, 720p/1080p, HEVC, to GIF), audio (M4A · WAV · AIFF), documents (DOCX · RTF · HTML · TXT · Markdown) and ZIP (pack · unpack).
+- **Ways in:** select files in Finder and open the panel → "File Conversion", type `png`, `merge pdf`, `mp4`, `zip` with files attached, drop files on the menu bar icon, or hold **⌃ while dragging files** for a format ring at the cursor (needs Accessibility).
+- **Watch folders:** new files that land in a folder are converted automatically; originals move to an "Originals" folder.
+- Results are saved next to the originals, which are never changed. Uses only macOS's own frameworks and tools — files never leave your Mac, nothing extra to download. Off by default.
 </details>
 
 <details>

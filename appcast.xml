@@ -4,40 +4,17 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Divee</title>
         <item>
-            <title>1.1.0</title>
-            <pubDate>Tue, 17 Nov 2026 11:49:03 +0900</pubDate>
-            <sparkle:version>14</sparkle:version>
-            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <title>1.1.1</title>
+            <pubDate>Tue, 17 Nov 2026 18:13:59 +0900</pubDate>
+            <sparkle:version>15</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>🇰🇷 1.1.0</h3>
-<ul>
-<li><b>노치</b> — 노치에 마우스를 올리면 지금·시스템·복사·선반 탭이 펼쳐져요. 다음 회의·충전·타이머·승인 대기·녹화 중을 보여 주고, Divee 알림도 노치로 받아요. 노치 왼쪽에 진행 중인 상태(과열·녹화·승인·타이머)가 작게 떠요.</li>
-<li><b>노치형 Divee 패널</b> — 설정 &gt; 패널 모양에서 고르면 ⌥Space 패널이 노치에서 내려와요. 노치를 누르면 언제든 노치형으로 열려요(⌃Tab 으로 탭 전환).</li>
-<li><b>파일 선반</b> — 파일을 노치로 끌어다 놓아 잠깐 보관하고, 나중에 끌어내요(복사하지 않고 위치만 기억).</li>
-<li><b>프롬프터</b> — 카메라 바로 아래(노치 밑)에 대본을 띄워 눈을 맞추며 읽어요. 화면 전체를 공유하면 상대에게 보일 수 있어요.</li>
-<li><b>타이핑 소리</b> — 맥 키보드·옛날 키보드·기계식 묵직·기계식 청축·타자기 5가지. 소리는 키 탭 서비스 안에서 나서 누른 키는 앱으로 넘어오지 않고, 암호 칸에서는 소리가 나지 않아요.</li>
-<li><b>타이핑 콤보</b> — 끊김 없이 이어 치면 노치 옆에 ×50 같은 콤보가 잠깐 떠요.</li>
-<li><b>드래그 도넛 새 모양</b> — 파일을 끌다 ⌃ 를 누르면 검은 원판에 형식 칸이 뜨고, 아래에 "사진 3개 → ZIP 하나로 묶기"처럼 할 일이 보여요.</li>
-<li><b>캡처</b> — GIF 바로 녹화, AI용으로 줄여 복사, 마크업으로 그리기.</li>
-<li>새 기능은 모두 기본 꺼짐 — 설정 &gt; 기능에서 켜세요. 플로팅 바(⌥⌘O)는 없앴어요.</li>
-</ul>
-<h3>🇺🇸 1.1.0</h3>
-<ul>
-<li><b>Notch</b> — hover over the notch for Now, System, Copy and Shelf tabs: upcoming meetings, charging, timers, sessions waiting on you and recordings. Divee alerts can show up in the notch, and a small status sits left of it (overheat, recording, approvals, timer).</li>
-<li><b>Notch-style Divee panel</b> — pick it in Settings &gt; Panel Style and ⌥Space drops down from the notch. Clicking the notch always opens it (⌃Tab switches tabs).</li>
-<li><b>File shelf</b> — drop files on the notch to keep them for a while and drag them out later (no copies, just their location).</li>
-<li><b>Prompter</b> — your script right below the camera so you can read while keeping eye contact. It may be visible if you share your entire screen.</li>
-<li><b>Typing sounds</b> — Mac, vintage, mechanical thock, mechanical clicky and typewriter. Sounds play inside the key tap service, so keystrokes never reach the app, and password fields stay silent.</li>
-<li><b>Typing combo</b> — keep typing and a combo like ×50 pops up next to the notch.</li>
-<li><b>New drag donut</b> — press ⌃ while dragging files for a black dial of formats, with what will happen shown underneath ("3 Photos → Bundle into one ZIP").</li>
-<li><b>Capture</b> — record GIFs directly, copy a smaller image for AI, draw with Markup.</li>
-<li>All new features are off by default — turn them on in Settings &gt; Features. The floating bar (⌥⌘O) is gone.</li>
-</ul>]]></description>
-            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.1.0/Divee-1.1.0.dmg" length="7347179" type="application/octet-stream" sparkle:edSignature="yiYneqwNHnZQkSZFx+ubGDupeuV+0e2WdnYFH+AX89sEnNFFcpthZ9Bzl6i86WVc+Ql3/UUA7Z9JQZQpAvOhDQ=="></enclosure>
+            <description><![CDATA[노치 탭 새 구성·지금 탭 위젯·노치 팬 조절·노치형 패널 안에서 이동·프롬프터 대본 칸·AI 사용량 한도 예보 / New notch tabs, Now widgets, fan control from the notch, in-place navigation in the notch-style panel, prompter script box, AI usage limit forecast]]></description>
+            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.1.1/Divee-1.1.1.dmg" length="7436253" type="application/octet-stream" sparkle:edSignature="zU7L97fx1UkFQ9eWWeVy/JyhlZvzGfM73AYwxLzjlGkwF4TFxR1wx3FRtxexSuTJuQHf9aYlUMAz4YuxArllDQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: H6zzWTQQiTbNHYN6jLp3zwscE1nx+eRrYFWUlDip9/i07vMLREru2I59C6P7qumOlX0afrr9+GyEA5dcojrVAQ==
-length: 4356
+edSignature: 0OiXJd52NE+lw/hNJoQ48LZgWZHg+Q6AC31g7QpppTJEXFivakCXkSIgKWM3RGctptBAsh8c16ArgwQRLEhPBg==
+length: 1462
 -->

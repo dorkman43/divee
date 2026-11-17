@@ -108,7 +108,7 @@ Type a line and it turns into a card **before you press Return** — computed on
 | **Right-click** the menu bar mascot | Settings… · Send Feedback… · Check for Updates… · Quit Divee |
 | **Click the notch** | Opens the notch-style panel (when the Notch module is on) |
 
-In Settings › General › **Panel Style**, choose whether ⌥Space opens the panel **Spotlight-style** (center of the screen) or **Notch-style** (dropping down from the notch). With an empty input, the notch style shows Now · Features · System · Copy · Shelf tabs — ⌃Tab switches between them.
+In Settings › General › **Panel Style**, choose whether ⌥Space opens the panel **Spotlight-style** (center of the screen) or **Notch-style** (dropping down from the notch). With an empty input, the notch style shows Now · System · Features · Copy · Shelf tabs (usually opening on Features) — ⌃Tab switches between them. Opening a feature swaps the screen inside the panel instead of popping out to the side; go back with the ‹ row, ← or ESC.
 
 ### The home list
 
@@ -240,7 +240,7 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 <details>
 <summary><b>Notch</b> — what you need, right at the notch</summary>
 
-- **Tabs:** hover over the notch for **Now** (the most important thing, big — an alert, a recording, an upcoming meeting, a timer, charging — plus quick buttons), **System** (CPU, temperature and fan, memory, battery), **Copy** (your last 5 copies; click to paste into the front app) and **Shelf**. The height stays the same across tabs.
+- **Tabs:** hover over the notch and, under a search row, you get **Now** (battery, timer and prompter widgets — alerts, recordings, upcoming meetings and approvals slot in front as tiles of the same size), **System** (CPU, temperature and fan, memory, battery — drag the slider in the Temp · Fan tile to set fan speed), **Features** (the feature list; click one to open it), **Copy** (your last 5 copies; click to paste into the front app) and **Shelf**. It usually opens on Features, or on Now when something needs you. The height stays the same across tabs.
 - **Alerts:** Divee alerts (overheat, battery, timer done, conversion finished…) briefly drop down from the notch, and the last 3 you missed stay there. Send them to the notch, macOS notifications or both.
 - **Status on the left:** only while something is going on, a tiny overheat temperature, recording dot, approvals count or timer sits left of the notch (clicks pass through).
 - **File shelf:** drop files on the notch to keep them for a while, then drag them out somewhere else. Nothing is copied — Divee just remembers where they are.
@@ -250,7 +250,7 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 <details>
 <summary><b>Prompter</b> — your script right below the camera</summary>
 
-- Shows your script under the notch (or under the menu bar without one) so you can read while looking at the camera. It scrolls at a steady speed, the scroll wheel moves it, and hovering shows play, speed, back-to-start and close.
+- Type or paste your script into the script box on the prompter screen, then open it. It shows your script under the notch (or under the menu bar without one) so you can read while looking at the camera. It scrolls at a steady speed, the scroll wheel moves it, and hovering shows play, speed, back-to-start and close.
 - Paste your script in Settings. If you share your entire screen it may be visible to others (sharing a single window keeps it hidden). Off by default.
 </details>
 
@@ -402,6 +402,7 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 <summary><b>AI Usage</b> — Claude Code and Codex limits</summary>
 
 - Shows how much of the 5-hour and weekly limits of Claude Code and Codex you've used, as bars — also in the menu bar and with warning colors.
+- **Limit forecast:** each row tells you whether you'll hit the limit before it resets at your current pace, or what percentage you'll end on.
 </details>
 
 <details>

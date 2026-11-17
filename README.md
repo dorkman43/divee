@@ -105,7 +105,10 @@ Type a line and it turns into a card **before you press Return** — computed on
 |---|---|
 | **⌥Space** | Open / close the Divee panel |
 | **Click** the menu bar mascot | Opens the same panel |
-| **Right-click** the menu bar mascot | Settings… · Pin floating panel · Send Feedback… · Check for Updates… · Quit Divee |
+| **Right-click** the menu bar mascot | Settings… · Send Feedback… · Check for Updates… · Quit Divee |
+| **Click the notch** | Opens the notch-style panel (when the Notch module is on) |
+
+In Settings › General › **Panel Style**, choose whether ⌥Space opens the panel **Spotlight-style** (center of the screen) or **Notch-style** (dropping down from the notch). With an empty input, the notch style shows Now · Features · System · Copy · Shelf tabs — ⌃Tab switches between them.
 
 ### The home list
 
@@ -232,6 +235,34 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 - Dark Mode and Empty Trash use the Automation permission (System Events, Finder).
 </details>
 
+### Notch
+
+<details>
+<summary><b>Notch</b> — what you need, right at the notch</summary>
+
+- **Tabs:** hover over the notch for **Now** (the most important thing, big — an alert, a recording, an upcoming meeting, a timer, charging — plus quick buttons), **System** (CPU, temperature and fan, memory, battery), **Copy** (your last 5 copies; click to paste into the front app) and **Shelf**. The height stays the same across tabs.
+- **Alerts:** Divee alerts (overheat, battery, timer done, conversion finished…) briefly drop down from the notch, and the last 3 you missed stay there. Send them to the notch, macOS notifications or both.
+- **Status on the left:** only while something is going on, a tiny overheat temperature, recording dot, approvals count or timer sits left of the notch (clicks pass through).
+- **File shelf:** drop files on the notch to keep them for a while, then drag them out somewhere else. Nothing is copied — Divee just remembers where they are.
+- Shows on MacBook screens with a notch. Off by default.
+</details>
+
+<details>
+<summary><b>Prompter</b> — your script right below the camera</summary>
+
+- Shows your script under the notch (or under the menu bar without one) so you can read while looking at the camera. It scrolls at a steady speed, the scroll wheel moves it, and hovering shows play, speed, back-to-start and close.
+- Paste your script in Settings. If you share your entire screen it may be visible to others (sharing a single window keeps it hidden). Off by default.
+</details>
+
+<details>
+<summary><b>Typing Sounds</b> · <b>Typing Combo</b></summary>
+
+- **Typing Sounds:** Mac keyboard, vintage keyboard, mechanical thock, mechanical clicky and typewriter. Sounds play inside the key tap service, so keystrokes never reach the app, and password fields stay silent.
+- **Typing Combo:** keep typing without a break and a combo like ×10, ×50, ×100 pops up right of the notch. Only the combo step reaches the app.
+- Both need Input Monitoring (or Accessibility). Off by default.
+- Mac and vintage keyboard sounds: “Single Key Press Sounds” by eklee and qubodup (CC BY 3.0, [source](https://opengameart.org/content/single-key-press-sounds)).
+</details>
+
 ### Tools
 
 <details>
@@ -299,6 +330,7 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 - **Panel:** Area capture · Area to clipboard · Window · Full screen · Capture toolbar · Screen recording — they use macOS's own `screencapture`.
 - **Text capture:** pick an area of the screen and the text in it is read on your Mac and copied.
 - **Recent captures:** open, show in Finder or copy the image. **Recent recording to GIF** converts the latest recording.
+- **Record a GIF** directly · **Copy smaller for AI** (a size that pastes well into AI chats) · **Draw with Markup** (macOS Markup arrows and pen).
 - Set shortcuts for area and text capture in Settings › Shortcuts. Requires Screen Recording. Off by default.
 </details>
 
@@ -306,7 +338,7 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 <summary><b>File Conversion</b> — convert files without leaving your Mac</summary>
 
 - **Formats:** images (HEIC · JPEG · PNG · TIFF · GIF · BMP, resize, strip metadata), PDF (merge, split, pages ↔ images), video (MOV ↔ MP4, 720p/1080p, HEVC, to GIF), audio (M4A · WAV · AIFF), documents (DOCX · RTF · HTML · TXT · Markdown) and ZIP (pack · unpack).
-- **Ways in:** select files in Finder and open the panel → "File Conversion", type `png`, `merge pdf`, `mp4`, `zip` with files attached, drop files on the menu bar icon, or hold **⌃ while dragging files** for a format ring at the cursor (needs Accessibility).
+- **Ways in:** select files in Finder and open the panel → "File Conversion", type `png`, `merge pdf`, `mp4`, `zip` with files attached, drop files on the menu bar icon, or hold **⌃ while dragging files** for a black format dial at the cursor — drop on a slice to convert, with what will happen shown underneath ("3 Photos → Bundle into one ZIP"; needs Accessibility).
 - **Watch folders:** new files that land in a folder are converted automatically; originals move to an "Originals" folder.
 - **Windows-friendly ZIP:** Korean (and other non-English) names stay readable on Windows — names are stored with the UTF-8 flag and no `__MACOSX` clutter, with a CP949 option for older tools. ZIPs made on Windows unpack with their names intact, and **Compose Korean Names** fixes file names that show up as separated jamo on Windows.
 - Results are saved next to the originals, which are never changed. Uses only macOS's own frameworks and tools — files never leave your Mac, nothing extra to download. Off by default.
@@ -446,7 +478,7 @@ Your devdive API key is stored only in your Mac's Keychain, and a confirmation c
 
 ## 🎨 Themes
 
-Pick one in Settings › General › **Theme** — it applies instantly. Themes cover the panel, flyouts, floating panel and speech bubble.
+Pick one in Settings › General › **Theme** — it applies instantly. Themes cover the panel, flyouts and speech bubble (the notch-style panel is always black).
 
 <div align="center">
 <img src="images/en/themes.gif" width="760" alt="Cycling through the four themes">
@@ -466,7 +498,6 @@ Pick one in Settings › General › **Theme** — it applies instantly. Themes 
 | **⌃⌥Space** | Hold to talk |
 | ⌃⌥J | Quick note |
 | ⌥⌘C | Pick a color on screen |
-| ⌥⌘O | Collapse / expand the floating panel |
 | ⌥⌘J | Jump to a waiting agent session |
 | ⌃⌥ + arrows / letters | Window Snap layouts (e.g. ⌃⌥← left half, ⌃⌥↩ maximize) |
 

@@ -4,17 +4,26 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Divee</title>
         <item>
-            <title>1.1.1</title>
-            <pubDate>Tue, 17 Nov 2026 18:13:59 +0900</pubDate>
-            <sparkle:version>15</sparkle:version>
-            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <title>1.1.2</title>
+            <pubDate>Fri, 20 Nov 2026 10:08:02 +0900</pubDate>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[노치 탭 새 구성·지금 탭 위젯·노치 팬 조절·노치형 패널 안에서 이동·프롬프터 대본 칸·AI 사용량 한도 예보 / New notch tabs, Now widgets, fan control from the notch, in-place navigation in the notch-style panel, prompter script box, AI usage limit forecast]]></description>
-            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.1.1/Divee-1.1.1.dmg" length="7436253" type="application/octet-stream" sparkle:edSignature="zU7L97fx1UkFQ9eWWeVy/JyhlZvzGfM73AYwxLzjlGkwF4TFxR1wx3FRtxexSuTJuQHf9aYlUMAz4YuxArllDQ=="></enclosure>
+            <description><![CDATA[<h3>🇰🇷 1.1.2</h3>
+<ul>
+<li><b>노치 없는 화면에서도 노치</b> — 노치 없는 맥북이나, 덮개를 닫고 외부 모니터만 쓸 때도 화면 가운데 맨 위로 마우스를 올리면 노치가 내려와 펼쳐져요. 평소엔 아무것도 보이지 않고, Divee 알림도 같은 자리에 잠깐 떠요.</li>
+<li><b>스페이스 이름 기능을 없앴어요</b> — 데스크톱 이름 붙이기·메뉴바 표시·플로팅 스페이스 바와 단축어의 데스크톱 이동이 함께 빠졌어요.</li>
+</ul>
+<h3>🇺🇸 1.1.2</h3>
+<ul>
+<li><b>The notch on screens without one</b> — on MacBooks without a notch, or with the lid closed on an external display, move the pointer to the top center of the screen and the notch drops down. Nothing shows otherwise, and Divee alerts appear in the same spot.</li>
+<li><b>Space Names is gone</b> — desktop names, the menu bar label, the floating space bar and the Shortcuts desktop switch were removed.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/dorkman43/divee/releases/download/v1.1.2/Divee-1.1.2.dmg" length="7398009" type="application/octet-stream" sparkle:edSignature="pCcme7ZB71ftj7G4HQUVcdd910i3i/OI3oPU3hl2vRW9zPxhhMtjAvIrdSZlrYze7r4gI5syzECxUm2hO7ulBQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 0OiXJd52NE+lw/hNJoQ48LZgWZHg+Q6AC31g7QpppTJEXFivakCXkSIgKWM3RGctptBAsh8c16ArgwQRLEhPBg==
-length: 1462
+edSignature: D8XhAXZFOLHBlbWoWYjJMPzeWk1Vfwe1CLXH8czwl4+n3WMD76IhMgJdpS6uN1G+H153A8XSLMJyrIBycAncBw==
+length: 2156
 -->

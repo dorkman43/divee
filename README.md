@@ -244,7 +244,7 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 - **Alerts:** Divee alerts (overheat, battery, timer done, conversion finished…) briefly drop down from the notch, and the last 3 you missed stay there. Send them to the notch, macOS notifications or both.
 - **Status on the left:** only while something is going on, a tiny overheat temperature, recording dot, approvals count or timer sits left of the notch (clicks pass through).
 - **File shelf:** drop files on the notch to keep them for a while, then drag them out somewhere else. Nothing is copied — Divee just remembers where they are.
-- Shows on MacBook screens with a notch. Off by default.
+- No notch? On MacBooks without one, or with the lid closed on an external display, move the pointer to the top center of the screen and it drops down the same way (nothing shows otherwise). Off by default.
 </details>
 
 <details>
@@ -366,13 +366,6 @@ Turn each module on or off in Settings › **Features**. Click a title to expand
 - **Snippets:** saved text — type its name in the panel and Return pastes it. Placeholders: `{date}` · `{time}` · `{datetime}` · `{clipboard}` · `{cursor}`.
 - **Quicklinks:** a link with `{query}` — type the link's name and a search term to open it (http · https · mailto and app addresses only).
 - Add and edit them in the module's settings. Off by default.
-</details>
-
-<details>
-<summary><b>Space Names</b> — name your desktops</summary>
-
-- Give each desktop (Space) a name and click it to switch there. Show the current desktop's name in the menu bar, or turn on a floating Spaces bar.
-- **Ask the AI:** "Go to desktop 2"
 </details>
 
 <details>
@@ -532,7 +525,7 @@ Divee asks only for what the features you turn on need, and says why.
 
 | Permission | Used by |
 |---|---|
-| Accessibility | Key remap cards, switching Spaces, brightness keys for external displays, clicking on-screen text, Window Snap, paste directly, translate selection |
+| Accessibility | Key remap cards, brightness keys for external displays, clicking on-screen text, Window Snap, paste directly, translate selection |
 | Screen Recording | Read screen, Capture |
 | Calendars · Reminders | Checking and adding events |
 | Microphone · Speech Recognition | Voice input and Dictation (only while held) |
